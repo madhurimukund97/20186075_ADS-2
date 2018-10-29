@@ -30,6 +30,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
