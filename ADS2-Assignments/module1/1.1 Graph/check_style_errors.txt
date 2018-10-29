@@ -60,6 +60,5 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:138:35: Parameter e should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:158: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:178: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:210: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 30 errors.

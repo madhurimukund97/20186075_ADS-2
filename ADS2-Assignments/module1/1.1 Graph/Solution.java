@@ -142,7 +142,7 @@ class GraphAdj implements Graph {
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		int[][] matrix = new int[v][v];
-    		for (int i = 0; i  < v; i++) {
+    		for (int i = 0; i  <= v; i++) {
     			for (int j = 0; j <= v; j++) {
     				if (hasEdge(i, j)) {
     					matrix[i][j] = 1;
@@ -207,5 +207,4 @@ public final class Solution {
 			break;
 		}
 	}
-	
 }
