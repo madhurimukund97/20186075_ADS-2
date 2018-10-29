@@ -3,11 +3,42 @@ import java.util.Scanner;
  * Interface for graph.
  */
 interface Graph {
-    public int vertex();
-    public int edge();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    /**
+     * number of vertices.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int vertex();
+    /**
+     * number of edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int edge();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    void addEdge(int v, int w);
+    /**
+     * Iterator..
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    boolean hasEdge(int v, int w);
 }
 /**
  * Class for graph.
@@ -114,10 +145,12 @@ class GraphAdj implements Graph {
     public void listrepr(final int v, final int e,
         final String[] list) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(vertex() + " vertices" + ", " + edge() + " edges");
+            System.out.println(vertex() +
+                " vertices" + ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertex() + " vertices" + ", " + edge() + " edges");
+            System.out.println(vertex() +
+                " vertices" + ", " + edge() + " edges");
             for (int i = 0; i < list.length; i++) {
             String s = "";
             s = list[i] + ": ";
@@ -138,10 +171,12 @@ class GraphAdj implements Graph {
      */
     public void matrixrepr(final int v, final int e) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(vertex() + " vertices" + ", " + edge() + " edges");
+            System.out.println(vertex() + " vertices" +
+                ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertex() + " vertices" + ", " + edge() + " edges");
+            System.out.println(vertex() + " vertices" +
+                ", " + edge() + " edges");
             int[][] matrix = new int[v][v];
             for (int i = 0; i  < v; i++) {
                 for (int j = 0; j < v; j++) {

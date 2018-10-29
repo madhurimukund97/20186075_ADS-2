@@ -31,19 +31,9 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:6:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:7:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:8:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:9:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:10:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:117: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:120: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:141: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:144: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:148:41: '+' should be on a new line. [OperatorWrap]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:152:41: '+' should be on a new line. [OperatorWrap]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:174:55: '+' should be on a new line. [OperatorWrap]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module1\1.1 Graph\Solution.java:178:55: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 5 errors.
