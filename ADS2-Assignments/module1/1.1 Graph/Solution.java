@@ -194,6 +194,7 @@ class GraphAdj implements Graph {
         }
     }
 }
+
 /**
  * Client program.
  */
