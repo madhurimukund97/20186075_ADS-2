@@ -145,12 +145,12 @@ class GraphAdj implements Graph {
     public void listrepr(final int v, final int e,
         final String[] list) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(vertex() +
-                " vertices" + ", " + edge() + " edges");
+            System.out.println(
+                vertex() + " vertices" + ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertex() +
-                " vertices" + ", " + edge() + " edges");
+            System.out.println(
+                vertex() + " vertices" + ", " + edge() + " edges");
             for (int i = 0; i < list.length; i++) {
             String s = "";
             s = list[i] + ": ";
@@ -171,12 +171,12 @@ class GraphAdj implements Graph {
      */
     public void matrixrepr(final int v, final int e) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(vertex() + " vertices" +
-                ", " + edge() + " edges");
+            System.out.println(
+                vertex() + " vertices" + ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertex() + " vertices" +
-                ", " + edge() + " edges");
+            System.out.println(
+                vertex() + " vertices" + ", " + edge() + " edges");
             int[][] matrix = new int[v][v];
             for (int i = 0; i  < v; i++) {
                 for (int j = 0; j < v; j++) {
