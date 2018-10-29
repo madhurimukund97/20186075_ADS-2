@@ -36,7 +36,7 @@ class GraphAdj implements Graph {
 	 *
 	 * @param      v     { parameter_description }
 	 */
-	GraphAdj(int v) {
+	GraphAdj(final int v) {
 		this.vertex = v;
 		this.edge = 0;
 		adj = (Bag<Integer>[]) new Bag[vertex];
@@ -66,7 +66,7 @@ class GraphAdj implements Graph {
 	 * @param      v     { parameter_description }
 	 * @param      w     { parameter_description }
 	 */
-	public void addEdge(int v, int w) {
+	public void addEdge(final int v, final int w) {
 		if (v == w) {
 			return;
 		}
@@ -83,7 +83,7 @@ class GraphAdj implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<Integer> adj(int v) {
+	public Iterable<Integer> adj(final int v) {
 		return adj[v];
 	}
 	/**
@@ -94,7 +94,7 @@ class GraphAdj implements Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(int v, int w) {
+	public boolean hasEdge(final int v, final int w) {
 		for (int i : adj[v]) {
 			if (i == w) {
 				return true;
@@ -111,7 +111,8 @@ class GraphAdj implements Graph {
 	 *
 	 * @throws     Exception  { exception_description }
 	 */
-	public void listrepr(int v, int e, String[] list) throws Exception {
+	public void listrepr(final int v, final int e,
+		final String[] list) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
@@ -135,15 +136,15 @@ class GraphAdj implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void matrixrepr(int v, int e) throws Exception {
+    public void matrixrepr(final int v, final int e) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		int[][] matrix = new int[v][v];
-    		for (int i = 0; i  <= v; i++) {
-    			for (int j = 0; j <= v; j++) {
+    		for (int i = 0; i  < v; i++) {
+    			for (int j = 0; j < v; j++) {
     				if (hasEdge(i, j)) {
     					matrix[i][j] = 1;
 		    		}
@@ -155,7 +156,6 @@ class GraphAdj implements Graph {
     			}
     			System.out.println();
     		}
-    		
     	}
     }
 }
@@ -175,7 +175,6 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		
 		Scanner s = new Scanner(System.in);
 		GraphAdj g = new GraphAdj();
 		String str = s.nextLine();
