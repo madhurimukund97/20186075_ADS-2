@@ -5,7 +5,6 @@ import java.util.Scanner;
 interface Graph {
     /**
      * number of vertices.
-     * 
      *
      * @return     { description_of_the_return_value }
      */
@@ -134,8 +133,6 @@ class GraphAdj implements Graph {
         }
         return false;
     }
-}
-class Adjlist {
     /**
      * Adjacency list representation.
      *
@@ -147,26 +144,23 @@ class Adjlist {
      */
     public void listrepr(final int v, final int e,
         final String[] list) throws Exception {
-        GraphAdj ga = new GraphAdj(v);
         if (e <= 1 && v <= 1) {
             System.out.println(
-                ga.vertex() + " vertices" + ", " + ga.edge() + " edges");
+                vertex() + " vertices" + ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
             System.out.println(
-                ga.vertex() + " vertices" + ", " + ga.edge() + " edges");
+                vertex() + " vertices" + ", " + edge() + " edges");
             for (int i = 0; i < list.length; i++) {
             String s = "";
             s = list[i] + ": ";
-            for (int k : ga.adj(i)) {
+            for (int k : adj(i)) {
                 s = s + list[k] + " ";
             }
             System.out.println(s);
             }
         }
     }
-}
-class Adjmatrix {
     /**
      * Adjacency matrix representation.
      *
@@ -176,18 +170,17 @@ class Adjmatrix {
      * @throws     Exception  { exception_description }
      */
     public void matrixrepr(final int v, final int e) throws Exception {
-        GraphAdj gad = new GraphAdj(v);
         if (e <= 1 && v <= 1) {
             System.out.println(
-                gad.vertex() + " vertices" + ", " + gad.edge() + " edges");
+                vertex() + " vertices" + ", " + edge() + " edges");
             throw new Exception("No edges");
         } else {
             System.out.println(
-                gad.vertex() + " vertices" + ", " + gad.edge() + " edges");
+                vertex() + " vertices" + ", " + edge() + " edges");
             int[][] matrix = new int[v][v];
             for (int i = 0; i  < v; i++) {
                 for (int j = 0; j < v; j++) {
-                    if (gad.hasEdge(i, j)) {
+                    if (hasEdge(i, j)) {
                         matrix[i][j] = 1;
                     }
                 }
@@ -221,8 +214,6 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         GraphAdj g = new GraphAdj();
         String str = s.nextLine();
-        Adjlist al = new Adjlist();
-        Adjmatrix am = new Adjmatrix();
         int v1 = Integer.parseInt(s.nextLine());
         int e1 = Integer.parseInt(s.nextLine());
         String[] tokens = s.nextLine().split(",");
@@ -235,14 +226,14 @@ public final class Solution {
         switch (str) {
             case "List":
             try {
-                al.listrepr(v1, e1, tokens);
+                g.listrepr(v1, e1, tokens);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
             break;
             case "Matrix":
             try {
-                am.matrixrepr(v1, e1);
+                g.matrixrepr(v1, e1);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
