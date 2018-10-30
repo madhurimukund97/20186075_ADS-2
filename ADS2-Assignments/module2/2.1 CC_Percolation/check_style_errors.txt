@@ -96,6 +96,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module2\2.1 CC_Percolation\Solution.java:305: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.

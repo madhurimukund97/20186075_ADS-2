@@ -302,7 +302,7 @@ public final class Solution {
         Percolation pobj = new Percolation(num);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(" ");
-            pobj.open(Integer.parseInt(tokens[0]), 
+            pobj.open(Integer.parseInt(tokens[0]),
                 Integer.parseInt(tokens[1]));
         }
         System.out.println(pobj.percolates()
