@@ -147,7 +147,7 @@ class Adjlist {
      */
     public void listrepr(final int v, final int e,
         final String[] list) throws Exception {
-        GraphAdj ga = new GraphAdj();
+        GraphAdj ga = new GraphAdj(v);
         if (e <= 1 && v <= 1) {
             System.out.println(
                 ga.vertex() + " vertices" + ", " + ga.edge() + " edges");
@@ -176,7 +176,7 @@ class Adjmatrix {
      * @throws     Exception  { exception_description }
      */
     public void matrixrepr(final int v, final int e) throws Exception {
-        GraphAdj gad = new GraphAdj();
+        GraphAdj gad = new GraphAdj(v);
         if (e <= 1 && v <= 1) {
             System.out.println(
                 gad.vertex() + " vertices" + ", " + gad.edge() + " edges");
