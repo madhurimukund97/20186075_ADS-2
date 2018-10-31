@@ -47,16 +47,16 @@ public class Digraph {
      *
      * @param      G     { parameter_description }
      */
-    public Digraph(final Digraph G) {
-        this(G.V());
-        this.E = G.E();
+    public Digraph(final Digraph g) {
+        this(g.vertex());
+        this.E = g.edge();
         for (int v = 0; v < V; v++) {
-            this.indegree[v] = G.indegree(v);
+            this.indegree[v] = g.indegree(v);
         }
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < g.vertex(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
+            for (int w : g.adj[v]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
@@ -70,7 +70,7 @@ public class Digraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
+    public int vertex() {
         return V;
     }
 
@@ -79,7 +79,7 @@ public class Digraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
+    public int edge() {
         return E;
     }
     /**
