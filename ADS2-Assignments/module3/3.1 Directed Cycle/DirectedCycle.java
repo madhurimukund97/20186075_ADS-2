@@ -27,8 +27,11 @@ public class DirectedCycle {
         marked  = new boolean[g.V()];
         onStack = new boolean[g.V()];
         edgeTo  = new int[g.V()];
-        for (int v = 0; v < g.V(); v++)
-            if (!marked[v] && cycle == null) dfs(g, v);
+        for (int v = 0; v < g.V(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(g, v);
+            }
+        }
     }
     /**
      * check that algorithm computes either the topological order or finds a directed cycle.

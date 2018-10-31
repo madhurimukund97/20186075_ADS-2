@@ -88,11 +88,9 @@ Audit done.
 Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:30: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:34: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:37: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
