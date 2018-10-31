@@ -1,4 +1,4 @@
-import java.util.NoSuchElementException;
+// import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
@@ -23,18 +23,17 @@ public class Digraph {
      * indegree[v] = indegree of vertex v.
      */
     private int[] indegree;
-    
     /**
      * Constructs the object.
      *
-     * @param      ver     { parameter_description }
+     * @param      ver1     { parameter_description }
      */
-    public Digraph(final int ver) {
-        if (ver < 0) {
+    public Digraph(final int ver1) {
+        if (ver1 < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.ver = ver;
+        this.ver = ver1;
         this.edg = 0;
         indegree = new int[ver];
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -63,7 +62,7 @@ public class Digraph {
                 adj[v].add(w);
             }
         }
-    }  
+    }
     /**
      * vertex count.
      *
