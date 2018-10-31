@@ -1,12 +1,10 @@
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:40: Expected @return tag. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:46: Expected @return tag. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:54:21: Parameter item should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Bag.java:67: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:14: Line has trailing spaces. [RegexpSingleline]

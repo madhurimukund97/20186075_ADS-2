@@ -9,7 +9,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * number of elements in bag.
      */
-    private int N;
+    private int n;
     /**
      * beginning of bag.
      */
@@ -32,7 +32,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
     /**
      * Is the BAG empty?
@@ -44,19 +44,19 @@ public class Bag<Item> implements Iterable<Item> {
      * Return the number of items in the bag.
     */
     public int size() {
-        return N;
+        return n;
     }
     /**
      * adds an item.
      *
      * @param      item  The item
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
     /**
      * Iterator.
