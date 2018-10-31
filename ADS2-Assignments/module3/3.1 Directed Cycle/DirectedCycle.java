@@ -65,26 +65,24 @@ public class DirectedCycle {
         }
         onStack[v] = false;
     }
-
     /**
-     * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph has a directed cycle, {@code false} otherwise
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
         return cycle != null;
     }
-
     /**
-     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph has a directed cycle,
-     *    and {@code null} otherwise
+     * Iterator.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-
     /**
-     * certify that digraph has a directed cycle if it reports one.
+     * check.
      *
      * @return     { description_of_the_return_value }
      */
@@ -93,7 +91,9 @@ public class DirectedCycle {
             // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
-                if (first == -1) first = v;
+                if (first == -1) {
+                    first = v;
+                }
                 last = v;
             }
             if (first != last) {

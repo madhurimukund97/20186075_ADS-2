@@ -98,13 +98,9 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:41:33: Parameter v should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:47: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:53:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:71: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:78: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:79: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:96: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:100: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
 Starting audit...
