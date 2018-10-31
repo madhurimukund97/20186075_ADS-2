@@ -10,11 +10,11 @@ public class Digraph {
     /**
      * number of vertices in this digraph.
      */
-    private final int V;
+    private final int ver;
     /**
      * number of edges in this digraph.
      */
-    private int E;
+    private int edg;
     /**
      * adj[v] = adjacency list for vertex v.
      */
@@ -27,30 +27,30 @@ public class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      ver     { parameter_description }
      */
-    public Digraph(final int V) {
-        if (V < 0) {
+    public Digraph(final int ver) {
+        if (ver < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ver = ver;
+        this.edg = 0;
+        indegree = new int[ver];
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      */
     public Digraph(final Digraph g) {
         this(g.vertex());
-        this.E = g.edge();
-        for (int v = 0; v < V; v++) {
+        this.edg = g.edge();
+        for (int v = 0; v < ver; v++) {
             this.indegree[v] = g.indegree(v);
         }
         for (int v = 0; v < g.vertex(); v++) {
@@ -63,15 +63,14 @@ public class Digraph {
                 adj[v].add(w);
             }
         }
-    }
-        
+    }  
     /**
      * vertex count.
      *
      * @return     { description_of_the_return_value }
      */
     public int vertex() {
-        return V;
+        return ver;
     }
 
     /**
@@ -80,7 +79,7 @@ public class Digraph {
      * @return     { description_of_the_return_value }
      */
     public int edge() {
-        return E;
+        return edg;
     }
     /**
      * validate vertex.
@@ -88,9 +87,9 @@ public class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V) {
+        if (v < 0 || v >= ver) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (ver - 1));
         }
     }
     /**
@@ -104,7 +103,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edg++;
     }
     /**
      * Iterator.
@@ -146,8 +145,8 @@ public class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
+        Digraph reverse = new Digraph(ver);
+        for (int v = 0; v < ver; v++) {
             for (int w : adj(v)) {
                 reverse.addEdge(w, v);
             }
@@ -161,8 +160,8 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(ver + " vertices, " + edg + " edges " + NEWLINE);
+        for (int v = 0; v < ver; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
