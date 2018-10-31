@@ -30,6 +30,58 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:14: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:15: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:16: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:17: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:18: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:19: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:20: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:22: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:23: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:24: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:26: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:27: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:30:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:35: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:39: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:54:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:56:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:56:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:57:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:57:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:58:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:59:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:60: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:67:20: Parameter V should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:67:24: 'V' hides a field. [HiddenField]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:67:24: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:85:20: Parameter G should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:85:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:102: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:108:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:117:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:123:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:123:33: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:124: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:125: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:125:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:125:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:133: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:135:25: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:135:32: Parameter w should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:147: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:150:34: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:160: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:163:26: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:173: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:176:25: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Digraph.java:198: Line is longer than 80 characters (found 93). [LineLength]
+Audit done.
+Checkstyle ends with 49 errors.
+Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
@@ -141,9 +193,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 42 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

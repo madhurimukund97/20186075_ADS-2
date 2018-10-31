@@ -1,19 +1,17 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Graph is bipartite
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Graph is bipartite
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Graph is bipartite
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Graph is bipartite
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,8 +19,7 @@ Expected Output:
 Graph is bipartite
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Graph is not bipartite
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -30,8 +27,7 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Graph is not bipartite
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,7 +35,6 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Graph is bipartite
 ----------------------------------------
 
