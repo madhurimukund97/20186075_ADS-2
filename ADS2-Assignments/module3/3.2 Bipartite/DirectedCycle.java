@@ -27,7 +27,7 @@ public class DirectedCycle {
      * finds such a cycle.
      * @param g the digraph
      */
-    public DirectedCycle(final Digraph g) {
+    public DirectedCycle(final Graph g) {
         marked  = new boolean[g.vertex()];
         onStack = new boolean[g.vertex()];
         edgeTo  = new int[g.vertex()];
@@ -43,7 +43,7 @@ public class DirectedCycle {
      * @param      g     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Digraph g, final int v) {
+    private void dfs(final Graph g, final int v) {
         isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
@@ -105,7 +105,7 @@ public class DirectedCycle {
         return true;
     }
     /**
-     * bipartite
+     * bipartite.
      *
      * @return     { description_of_the_return_value }
      */

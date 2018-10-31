@@ -14,12 +14,12 @@ Your Output:
 Graph is bipartite
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Graph is bipartite
 
 Your Output: 
-Graph is not a bipartite
+Graph is bipartite
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -30,11 +30,11 @@ Your Output:
 Graph is not a bipartite
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Graph is not a bipartite
 
 Your Output: 
-Graph is bipartite
+Graph is not a bipartite
 ----------------------------------------
 

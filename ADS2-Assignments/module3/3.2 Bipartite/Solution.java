@@ -18,14 +18,14 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int numofvertices = Integer.parseInt(s.nextLine());
         int numofedges = Integer.parseInt(s.nextLine());
-        Digraph digraph = new Digraph(numofvertices);
+        Graph graph = new Graph(numofvertices);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(" ");
-            digraph.addEdge(Integer.parseInt(tokens[0]),
+            graph.addEdge(Integer.parseInt(tokens[0]),
                 Integer.parseInt(tokens[1]));
         }
-        DirectedCycle dircycle = new DirectedCycle(digraph);
-        if (dircycle.hasCycle()) {
+        DirectedCycle dircycle = new DirectedCycle(graph);
+        if (dircycle.isbipartite()) {
             System.out.println("Graph is bipartite");
         } else {
             System.out.println("Graph is not a bipartite");

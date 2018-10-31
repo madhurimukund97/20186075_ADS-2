@@ -36,7 +36,7 @@ public class Graph {
      * Return the number of vertices in the graph.
      * @return      {Integer}
      */
-    public int vertices() {
+    public int vertex() {
         return vertices;
     }
 
@@ -44,7 +44,7 @@ public class Graph {
      * Return the number of edges in the graph.
      * @return      {Integer}
      */
-    public int edges() {
+    public int edge() {
         return edges;
     }
 
