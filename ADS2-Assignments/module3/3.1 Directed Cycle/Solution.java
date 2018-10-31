@@ -21,7 +21,8 @@ public final class Solution {
         Digraph digraph = new Digraph(numofedges);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(" ");
-            digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+            digraph.addEdge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]));
         }
         DirectedCycle dircycle = new DirectedCycle(digraph);
         if (dircycle.hasCycle()) {
