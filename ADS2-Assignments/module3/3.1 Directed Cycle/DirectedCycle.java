@@ -7,7 +7,6 @@ public class DirectedCycle {
      */
     private boolean[] marked;
     /**
-     *
      *  edgeTo[v] = previous vertex on path to v.
      */
     private int[] edgeTo;
@@ -19,7 +18,6 @@ public class DirectedCycle {
      * directed cycle (or null if no such cycle).
      */
     private Stack<Integer> cycle;
-
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
@@ -42,18 +40,12 @@ public class DirectedCycle {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-
-            // short circuit if directed cycle found
-            if (cycle != null) return;
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            if (cycle != null) {
+                return;
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
