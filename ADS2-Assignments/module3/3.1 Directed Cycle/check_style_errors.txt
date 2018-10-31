@@ -96,9 +96,8 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:39:22: Parameter G should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:39:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:39:33: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:92: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
