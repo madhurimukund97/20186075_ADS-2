@@ -19,6 +19,10 @@ public class DirectedCycle {
      */
     private Stack<Integer> cycle;
     /**
+     * boolean.
+     */
+    private boolean isbipartite = false;
+    /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
      * @param g the digraph
@@ -40,6 +44,7 @@ public class DirectedCycle {
      * @param      v     { parameter_description }
      */
     private void dfs(final Digraph g, final int v) {
+        isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
         for (int w : g.adj(v)) {
@@ -98,6 +103,14 @@ public class DirectedCycle {
             }
         }
         return true;
+    }
+    /**
+     * bipartite
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public boolean isbipartite() {
+        return isbipartite;
     }
 }
 
