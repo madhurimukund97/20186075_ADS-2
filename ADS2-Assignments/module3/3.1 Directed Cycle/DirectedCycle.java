@@ -34,7 +34,7 @@ public class DirectedCycle {
         }
     }
     /**
-     * check that algorithm computes either the topological order or finds a directed cycle.
+     * check that algorithm computes either the topological order.
      *
      * @param      g     { parameter_description }
      * @param      v     { parameter_description }
@@ -100,3 +100,4 @@ public class DirectedCycle {
         return true;
     }
 }
+
