@@ -68,7 +68,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
     /**
      * Class for list iterator.
@@ -107,3 +107,4 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
+
