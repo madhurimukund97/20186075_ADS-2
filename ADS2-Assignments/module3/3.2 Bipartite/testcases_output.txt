@@ -19,15 +19,15 @@ Expected Output:
 Graph is bipartite
 
 Your Output: 
-Graph is not bipartite
+Graph is not a bipartite
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Graph is not a bipartite
 
 Your Output: 
-Graph is not bipartite
+Graph is not a bipartite
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
