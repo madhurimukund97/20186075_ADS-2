@@ -1,8 +1,24 @@
+/**
+ * Class for directed cycle.
+ */
 public class DirectedCycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    /**
+     * marked[v] = has vertex v been marked.
+     */
+    private boolean[] marked;
+    /**
+     *
+     *  edgeTo[v] = previous vertex on path to v.
+     */
+    private int[] edgeTo;
+    /**
+     * onStack[v] = is vertex on the stack.
+     */
+    private boolean[] onStack;
+    /**
+     * directed cycle (or null if no such cycle).
+     */
+    private Stack<Integer> cycle;
 
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
@@ -16,8 +32,12 @@ public class DirectedCycle {
         for (int v = 0; v < G.V(); v++)
             if (!marked[v] && cycle == null) dfs(G, v);
     }
-
-    // check that algorithm computes either the topological order or finds a directed cycle
+    /**
+     * check that algorithm computes either the topological order or finds a directed cycle.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(Digraph G, int v) {
         onStack[v] = true;
         marked[v] = true;
@@ -63,7 +83,11 @@ public class DirectedCycle {
         return cycle;
     }
 
-    // certify that digraph has a directed cycle if it reports one
+    /**
+     * certify that digraph has a directed cycle if it reports one.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
         if (hasCycle()) {
             // verify cycle

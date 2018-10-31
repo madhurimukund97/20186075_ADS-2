@@ -88,31 +88,23 @@ Audit done.
 Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:5: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:12:26: Parameter G should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:12:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:16: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:17: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:20: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:21:22: Parameter G should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:21:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:21:33: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:27: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:33:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:51: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:58: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:59: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:67:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:72: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:76: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:28:26: Parameter G should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:28:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:32: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:33: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:36: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:41:22: Parameter G should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:41:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:41:33: Parameter v should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:47: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:53:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:71: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:78: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:79: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:96: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\DirectedCycle.java:100: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 Audit done.
 Starting audit...
