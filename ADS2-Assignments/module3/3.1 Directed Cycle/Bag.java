@@ -35,14 +35,18 @@ public class Bag<Item> implements Iterable<Item> {
         n = 0;
     }
     /**
-     * Is the BAG empty?
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
     /**
-     * Return the number of items in the bag.
-    */
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return n;
     }
