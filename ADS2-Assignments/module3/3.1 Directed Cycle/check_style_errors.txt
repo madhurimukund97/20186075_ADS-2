@@ -2,13 +2,19 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:30:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:32:30: 'vertex' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:32:30: Expected @param tag for 'vertex'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:32:30: 'V' hides a field. [HiddenField]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:32:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:50:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:67: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:73:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:82:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:93:62: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Digraph.java:93:63: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
 Starting audit...
