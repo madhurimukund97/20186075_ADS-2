@@ -1,5 +1,19 @@
 import java.util.Scanner;
+/**
+ * Client program.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //constructor not used.
+    }
+    /**
+     * Main class.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int numofvertices = Integer.parseInt(s.nextLine());
@@ -11,9 +25,9 @@ public final class Solution {
         }
         DirectedCycle dircycle = new DirectedCycle(digraph);
         if (dircycle.hasCycle()) {
-            System.out.println("Cycle exists");
+            System.out.println("Cycle exists.");
         } else {
-            System.out.println("Cycle doesn't exists");
+            System.out.println("Cycle doesn't exists.");
         }
     }
 }

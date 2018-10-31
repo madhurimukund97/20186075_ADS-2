@@ -114,12 +114,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 24 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Solution.java:10: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Solution.java:24: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
