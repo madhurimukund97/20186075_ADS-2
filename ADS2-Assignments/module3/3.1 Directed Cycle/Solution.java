@@ -26,9 +26,9 @@ public final class Solution {
         }
         DirectedCycle dircycle = new DirectedCycle(digraph);
         if (dircycle.hasCycle()) {
-            System.out.println("Cycle exists.");
+            System.out.println("Graph is bipartite");
         } else {
-            System.out.println("Cycle doesn't exists.");
+            System.out.println("Graph is not bipartite");
         }
     }
 }

@@ -65,7 +65,10 @@ public class Digraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Digraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException(
+                "Number of vertices in a Digraph must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         indegree = new int[V];
@@ -74,9 +77,6 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-
-    
-
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
@@ -85,8 +85,9 @@ public class Digraph {
     public Digraph(Digraph G) {
         this(G.V());
         this.E = G.E();
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++) {
             this.indegree[v] = G.indegree(v);
+        }
         for (int v = 0; v < G.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
