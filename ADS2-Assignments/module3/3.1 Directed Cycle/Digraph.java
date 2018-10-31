@@ -191,11 +191,10 @@ public class Digraph {
         }
         return reverse;
     }
-
     /**
      * Returns a string representation of the graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,  
+     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
