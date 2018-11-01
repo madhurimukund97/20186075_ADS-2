@@ -69,7 +69,7 @@ public class WordNet {
                 String[] line = inp.readString().split(",");
                 for (int i = 1; i < line.length; i++) {
                     int hyponyms = Integer.parseInt(line[0]);
-                    int hypernyms = Integer.parseInt(line[1]);
+                    int hypernyms = Integer.parseInt(line[i]);
                     digraph.addEdge(hyponyms, hypernyms);
                 }
             }
