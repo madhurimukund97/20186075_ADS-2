@@ -14,6 +14,7 @@ public class WordNet {
         SynsetFile(synsets, hypernyms);
         
     }
+    private int ver = 0;
     /**
      * Reads a file.
      *
@@ -40,7 +41,6 @@ public class WordNet {
      */
     public void SynsetFile(String synset, String hypernyms) {
         int synsetid = 0;
-        int ver = 0;
         try {
             In inp = new In("./Files/" + synset);
             while (!inp.isEmpty()) {
@@ -66,11 +66,22 @@ public class WordNet {
         Digraph digraph = new Digraph(synsetv);
         while (!inp.isEmpty()) {
             String[] line = inp.readString().split(",");
-            int hyponyms = Integer.parseInt(line[0]);
-            int hypernyms = Integer.parseInt(line[1]);
-            digraph.addEdge(hyponyms, hypernyms);
+            for (int i = 1; i < line.length; i++) {
+                int hyponyms = Integer.parseInt(line[0]);
+                int hypernyms = Integer.parseInt(line[1]);
+                digraph.addEdge(hyponyms, hypernyms);
+            }
         }
         DirectedCycle dcycle = new DirectedCycle(digraph);
+        int temp = 0;
+        for (int j = 0; j < ver; j++) {
+            if (digraph.outdegree(j) == 0) {
+                temp++;
+            }
+        }
+        if (temp > 1) {
+                throw new IllegalArgumentException("Multiple roots");
+        }
         if (dcycle.hasCycle()) {
             System.out.println("Cycle detected");            
         } else {
