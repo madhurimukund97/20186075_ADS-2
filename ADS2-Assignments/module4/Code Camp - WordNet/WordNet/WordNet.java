@@ -14,7 +14,7 @@ public class WordNet {
         SynsetFile(synsets, hypernyms);
         
     }
-    private int ver = 0;
+    private int ver;
     /**
      * Reads a file.
      *
