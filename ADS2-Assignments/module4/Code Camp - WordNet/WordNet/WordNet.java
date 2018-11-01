@@ -62,30 +62,34 @@ public class WordNet {
      * @param      synsetv   The synsetv
      */
     public void HypernymFile(String hypernym, Digraph synsetv) {
-        In inp = new In("./Files/" + hypernym);
-        Digraph digraph = new Digraph(synsetv);
-        while (!inp.isEmpty()) {
-            String[] line = inp.readString().split(",");
-            for (int i = 1; i < line.length; i++) {
-                int hyponyms = Integer.parseInt(line[0]);
-                int hypernyms = Integer.parseInt(line[1]);
-                digraph.addEdge(hyponyms, hypernyms);
+        try {
+            In inp = new In("./Files/" + hypernym);
+            Digraph digraph = new Digraph(synsetv);
+            while (!inp.isEmpty()) {
+                String[] line = inp.readString().split(",");
+                for (int i = 1; i < line.length; i++) {
+                    int hyponyms = Integer.parseInt(line[0]);
+                    int hypernyms = Integer.parseInt(line[1]);
+                    digraph.addEdge(hyponyms, hypernyms);
+                }
             }
-        }
-        DirectedCycle dcycle = new DirectedCycle(digraph);
-        int temp = 0;
-        for (int j = 0; j < ver; j++) {
-            if (digraph.outdegree(j) == 0) {
-                temp++;
+            DirectedCycle dcycle = new DirectedCycle(digraph);
+            int temp = 0;
+            for (int j = 0; j < ver; j++) {
+                if (digraph.outdegree(j) == 0) {
+                    temp++;
+                }
             }
-        }
-        if (temp > 1) {
-                throw new IllegalArgumentException("Multiple roots");
-        }
-        if (dcycle.hasCycle()) {
-            System.out.println("Cycle detected");            
-        } else {
-            System.out.println(digraph);
+            if (temp > 1) {
+                    throw new IllegalArgumentException("Multiple roots");
+            }
+            if (dcycle.hasCycle()) {
+                System.out.println("Cycle detected");            
+            } else {
+                System.out.println(digraph);
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 

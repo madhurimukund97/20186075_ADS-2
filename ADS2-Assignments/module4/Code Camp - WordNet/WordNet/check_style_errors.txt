@@ -493,9 +493,9 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:64:17: Name 'HypernymFile' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:64:30: Parameter hypernym should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:64:47: Parameter synsetv should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:99: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:108:27: Parameter word should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:113: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:87: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:103: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:112:27: Parameter word should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:117: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 17 errors.
