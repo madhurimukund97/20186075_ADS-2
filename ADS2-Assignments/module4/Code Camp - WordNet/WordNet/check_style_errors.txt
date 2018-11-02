@@ -293,18 +293,9 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:10:16: Parameter G should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:10:24: Expected @param tag for 'G'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:10:24: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:22:23: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:22:30: Parameter w should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:34:25: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:34:32: Parameter w should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:46:23: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:46:44: Parameter w should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:58:25: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:58:46: Parameter w should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:66:29: Parameter args should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:67: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]

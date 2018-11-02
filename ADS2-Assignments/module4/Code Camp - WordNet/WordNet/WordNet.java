@@ -95,7 +95,7 @@ public class WordNet {
                 if (digraph.outdegree(j) == 0) {
                     temp++;
                 }
-                System.out.println(temp);
+                // System.out.println(temp);
             }
             if (temp > 1) {
                     throw new IllegalArgumentException("Multiple roots");

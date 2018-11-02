@@ -19,51 +19,51 @@ public class SAP {
      *
      * @return     { description_of_the_return_value }
      */
-    public int length(int v, int w) {
+    // public int length(int v, int w) {
 
-    }
-    /**
-     * a common ancestor of v and w that participates
-     * in a shortest ancestral path; -1 if no such path.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int ancestor(int v, int w) {
+    // }
+    // /**
+    //  * a common ancestor of v and w that participates
+    //  * in a shortest ancestral path; -1 if no such path.
+    //  *
+    //  * @param      v     { parameter_description }
+    //  * @param      w     { parameter_description }
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public int ancestor(int v, int w) {
 
-    }
-    /**
-     * length of shortest ancestral path between any vertex in v
-     * and any vertex in w; -1 if no such path.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+    // }
+    // /**
+    //  * length of shortest ancestral path between any vertex in v
+    //  * and any vertex in w; -1 if no such path.
+    //  *
+    //  * @param      v     { parameter_description }
+    //  * @param      w     { parameter_description }
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public int length(Iterable<Integer> v, Iterable<Integer> w) {
 
-    }
-    /**
-     * a common ancestor that participates in shortest ancestral path.
-     * -1 if no such path.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
+    // }
+    // /**
+    //  * a common ancestor that participates in shortest ancestral path.
+    //  * -1 if no such path.
+    //  *
+    //  * @param      v     { parameter_description }
+    //  * @param      w     { parameter_description }
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
 
-    }
-    /**
-     * do unit testing of this class.
-     *
-     * @param      args  The arguments
-     */
-    public static void main(String[] args) {
+    // }
+    // /**
+    //  * do unit testing of this class.
+    //  *
+    //  * @param      args  The arguments
+    //  */
+    // public static void main(String[] args) {
         
-    }
+    // }
 }
