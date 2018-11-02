@@ -20,7 +20,11 @@ public final class Solution {
 		String str = StdIn.readString();
 		switch (str) {
 			case "Graph":
-				WordNet wn = new WordNet(synset,hypernym);
+				try {
+					WordNet wn = new WordNet(synset,hypernym);
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
 			break;
 			case "Queries":
 			try {
@@ -35,5 +39,6 @@ public final class Solution {
 			default:
 			break;
 		}
+		
 	}
 }

@@ -81,22 +81,22 @@ public class WordNet {
     public void HypernymFile(String hypernym, Digraph synsetv) {
         try {
             In inp = new In("./Files/" + hypernym);
-            Digraph digraph = new Digraph(synsetv);
+            // Digraph digraph = new Digraph(synsetv);
             while (!inp.isEmpty()) {
                 String[] line = inp.readString().split(",");
                 for (int i = 1; i < line.length; i++) {
                     int hyponyms = Integer.parseInt(line[0]);
                     int hypernyms = Integer.parseInt(line[i]);
-                    digraph.addEdge(hyponyms, hypernyms);
+                    synsetv.addEdge(hyponyms, hypernyms);
                 }
             }
-            DirectedCycle dcycle = new DirectedCycle(digraph);
+            DirectedCycle dcycle = new DirectedCycle(synsetv);
             int temp = 0;
             for (int j = 0; j < ver; j++) {
-                if (digraph.outdegree(j) == 0) {
+                if (synsetv.outdegree(j) == 0) {
                     temp++;
                 }
-                System.out.println(temp);
+                // System.out.println(temp);
             }
             if (temp > 1) {
                     throw new IllegalArgumentException("Multiple roots");
@@ -104,7 +104,7 @@ public class WordNet {
             if (dcycle.hasCycle()) {
                 System.out.println("Cycle detected");            
             } else {
-                System.out.println(digraph);
+                System.out.println(synsetv);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
