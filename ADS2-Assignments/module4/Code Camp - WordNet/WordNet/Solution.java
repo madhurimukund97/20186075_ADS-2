@@ -23,10 +23,14 @@ public final class Solution {
 				WordNet wn = new WordNet(synset,hypernym);
 			break;
 			case "Queries":
+			try {
 				String[] str1 = StdIn.readString().split(" ");
 				if (str1[0].equals("null")) {
 					System.out.println("IllegalArgumentException");
 				}
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 			break;
 			default:
 			break;
