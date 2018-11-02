@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.List;
 import java.util.ArrayList;     
 public class WordNet {
     /**
@@ -12,11 +12,15 @@ public class WordNet {
     /**
      * declaration of ST.
      */
-    private LinearProbingHashST<Integer, String> id;
+    private ArrayList<String> id;
     /**
      * ST.
      */
     private LinearProbingHashST<String, ArrayList<Integer>> noun;
+    /**
+     * vertices.
+     */
+    private int ver;
     /**
      * Constructs the object.
      * constructor takes the name of the two input files.
@@ -28,10 +32,35 @@ public class WordNet {
         // lp = new LinearProbingHashST<String, Integer>();
         // // int synset = readSynsetFile(synsets);
         // digrph = readHypernymFile(hypernyms, synset);
-        SynsetFile(synsets, hypernyms);
+        id = new ArrayList<String>();
+        noun = new LinearProbingHashST<String, ArrayList<Integer>>();
+        ver = SynsetFile(synsets);
+        dg = new Digraph(ver);
+        HypernymFile(hypernyms);
+        sap = new SAP(dg);
         
     }
-    private int ver;
+    // /**
+    //  * checks the outdegrees.
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public int noOfOutdegree() {
+    //     int max = 0;
+    //     for (int i = 0; i < ver; i++) {
+    //         if (dg.outdegree(i) == 0) {
+    //             max++;
+    //         }
+    //     }
+    //     return max;
+    // }
+    /**
+     * display output.
+     */
+    
+    
+
+    
     // /**
     //  * Reads a file.
     //  *
@@ -56,21 +85,39 @@ public class WordNet {
      * @param      synset     The synset
      * @param      hypernyms  The hypernyms
      */
-    public void SynsetFile(String synset, String hypernyms) {
-        int synsetid = 0;
-        try {
+    public int SynsetFile(String synset) {
+        // int synsetid = 0;
+            int ver = 0;
             In inp = new In("./Files/" + synset);
             while (!inp.isEmpty()) {
                 ver++;
-                String[] file = inp.readString().split(",");
-                synsetid = Integer.parseInt(file[0]);
-                String[] noun = file[1].split(" ");
+
+
+                String[] arr = inp.readLine().split(",");
+                int id1 = Integer.parseInt(arr[0]);
+                id.add(id1,arr[1]);
+                String[] arr1 = arr[1].split(" ");
+                for (int i = 0; i <  arr1.length; i++) {
+                    ArrayList<Integer> list;
+                    // String[] arr1 = arr[1].split(" ");
+                    // id.put(Integer.parseInt(arr[0]), arr[1]);
+                    if (noun.contains(arr1[i])) {
+                    list = noun.get(arr1[i]);
+                    list.add(id1);
+                } else {
+                    list = new ArrayList<Integer>();
+                    list.add(id1);
+                }
+                noun.put(arr1[i], list);
             }
-            Digraph dobj = new Digraph(ver);
-            HypernymFile(hypernyms, dobj);
-        } catch (Exception e) {
-            System.out.println("File not found");
-        }
+                
+                // synsetid = Integer.parseInt(file[0]);
+                // String[]  = file[1].split(" ");
+            }
+            // Digraph dobj = new Digraph(ver);
+            // HypernymFile(hypernyms, dobj);
+        
+        return ver;
     }
     /**
      * read hypernym file.
@@ -78,36 +125,16 @@ public class WordNet {
      * @param      hypernym  The hypernym
      * @param      synsetv   The synsetv
      */
-    public void HypernymFile(String hypernym, Digraph synsetv) {
-        try {
-            In inp = new In("./Files/" + hypernym);
-            // Digraph digraph = new Digraph(synsetv);
-            while (!inp.isEmpty()) {
-                String[] line = inp.readString().split(",");
-                for (int i = 1; i < line.length; i++) {
-                    int hyponyms = Integer.parseInt(line[0]);
-                    int hypernyms = Integer.parseInt(line[i]);
-                    synsetv.addEdge(hyponyms, hypernyms);
-                }
+    public void HypernymFile(String hypernym) {
+        int temp = 0;
+        In inp = new In("./Files/" + hypernym);
+        while (!inp.isEmpty()) {
+            temp++;
+            String[] line = inp.readString().split(",");
+            for (int i = 1; i < line.length; i++) {
+                //System.out.println(line[0]+" " +line[1]);
+                dg.addEdge(Integer.parseInt(line[0]), Integer.parseInt(line[i]));
             }
-            DirectedCycle dcycle = new DirectedCycle(synsetv);
-            int temp = 0;
-            for (int j = 0; j < ver; j++) {
-                if (synsetv.outdegree(j) == 0) {
-                    temp++;
-                }
-                // System.out.println(temp);
-            }
-            if (temp > 1) {
-                    throw new IllegalArgumentException("Multiple roots");
-            }
-            if (dcycle.hasCycle()) {
-                System.out.println("Cycle detected");            
-            } else {
-                System.out.println(synsetv);
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
         }
     }
 
@@ -118,7 +145,7 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public Iterable<String> nouns() {
-        return null; 
+        return noun.keys(); 
     }
     /**
      * Determines if noun.
@@ -128,39 +155,91 @@ public class WordNet {
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(String word) {
-        return false;
+        if (word.equals("null")) {
+            throw new IllegalArgumentException();
+        }
+        return noun.contains(word);
     }
-    // /**
-    //  * distance between nounA and nounB (defined below).
-    //  * 
-    //  *
-    //  * @param      nounA  The noun a
-    //  * @param      nounB  The noun b
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
-    // public int distance(String nounA, String nounB) {
+    /**
+     * distance between nounA and nounB (defined below).
+     * 
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int distance(String nounA, String nounB) {
+        ArrayList<Integer> arr1 = noun.get(nounA);
+        ArrayList<Integer> arr2 = noun.get(nounB);
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
+        return sap.length(arr1,arr2);
 
-    // }
-    // /**
-    //  * a synset (second field of synsets.txt).
-    //  * that is the common ancestor of nounA and nounB.
-    //  * in a shortest ancestral path (defined below)
-    //  *
-    //  * @param      nounA  The noun a
-    //  * @param      nounB  The noun b
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
-    // public String sap(String nounA, String nounB) {
+    }
+    /**
+     * a synset (second field of synsets.txt).
+     * that is the common ancestor of nounA and nounB.
+     * in a shortest ancestral path (defined below)
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String sap(String nounA, String nounB) {
+        ArrayList<Integer> arr1 = noun.get(nounA);
+        ArrayList<Integer> arr2 = noun.get(nounB);
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
+        int ancestor = sap.ancestor(arr1,arr2);
+        return id.get(ancestor);
+    }
 
+    // public void display() {
+    //     DirectedCycle dircycle = new DirectedCycle(graph);
+    //     if (directedCycle.hasCycle()) {
+    //         throw new IllegalArgumentException("Cycle detected");
+    //     } else {
+    //         int degree = 0;
+
+    //         for (int i = 0; i < graph.V(); i++) {
+    //             if (graph.outdegree(i) == 0) {
+    //                 degree++;
+    //             }
+    //         }
+    //         if (degree > 1) {
+    //             throw new IllegalArgumentException("Multiple roots");
+    //         }
+    //         System.out.println(graph);
+    //     }
     // }
-    // /**
-    //  * do unit testing of this class.
-    //  *
-    //  * @param      args  The arguments
-    //  */
+    /**
+     * do unit testing of this class.
+     *
+     * @param      args  The arguments
+     */
     // public static void main(String[] args) {
 
     // }
+    public void display() {
+        DirectedCycle dc = new DirectedCycle(dg);
+        if (dc.hasCycle()) {
+            throw new IllegalArgumentException("Cycle detected");
+        } else {
+            int outdegree = 0;
+
+            for (int i = 0; i < dg.vertex(); i++) {
+                if (dg.outdegree(i) == 0) {
+                    outdegree++;
+                }
+            }
+            if (outdegree > 1) {
+                throw new IllegalArgumentException("Multiple roots");
+            }
+            System.out.println(dg);
+        }
+    }
 }
