@@ -352,14 +352,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:17:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:24:57: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:42: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:52: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

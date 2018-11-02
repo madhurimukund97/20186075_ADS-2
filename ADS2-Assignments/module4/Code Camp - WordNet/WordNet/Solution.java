@@ -1,34 +1,33 @@
-import java.util.Scanner;
 /**
  * Solution class.
  */
 public final class Solution {
-	/**
-	 * constructs an object.
-	*/
-	private Solution() {
-		// constructor not used.
-	}
-	/**
-	 * Main class.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		String synset = StdIn.readLine();
-		String hypernym = StdIn.readLine();
-		String str = StdIn.readLine();
-		switch (str) {
-			case "Graph":
-			try {
-			WordNet wn = new WordNet(synset,hypernym);
-			wn.display();
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
-			break;
-			case "Queries":
-			try {
+    /**
+     * constructs an object.
+    */
+    private Solution() {
+        // constructor not used.
+    }
+    /**
+     * Main class.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        String synset = StdIn.readLine();
+        String hypernym = StdIn.readLine();
+        String str = StdIn.readLine();
+        switch (str) {
+            case "Graph":
+            try {
+            WordNet wn = new WordNet(synset, hypernym);
+            wn.display();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            break;
+            case "Queries":
+            try {
                 WordNet wn1 = new WordNet(synset,
                                           hypernym);
                 while (StdIn.hasNextLine()) {
@@ -43,12 +42,12 @@ public final class Solution {
                                                qarray[1]));
                 }
             } catch (Exception e) {
-            	//e.printStackTrace();
+                //e.printStackTrace();
                 System.out.println(e.getMessage());
             }
             break;
-			default:
-			break;
-		}	
-	}
+            default:
+            break;
+        }
+    }
 }
