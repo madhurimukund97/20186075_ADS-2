@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.ArrayList;
+import java.util.ArrayList;     
 public class WordNet {
     /**
      * declaration of digraph.
@@ -96,7 +96,7 @@ public class WordNet {
                 if (digraph.outdegree(j) == 0) {
                     temp++;
                 }
-                // System.out.println(temp);
+                System.out.println(temp);
             }
             if (temp > 1) {
                     throw new IllegalArgumentException("Multiple roots");
