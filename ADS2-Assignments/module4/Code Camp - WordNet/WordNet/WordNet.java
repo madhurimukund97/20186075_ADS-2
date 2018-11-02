@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 public class WordNet {
     /**
      * declaration of digraph.
@@ -11,11 +12,11 @@ public class WordNet {
     /**
      * declaration of ST.
      */
-    // private LinearProbingHashST<Integer, String> id;
+    private LinearProbingHashST<Integer, String> id;
     /**
      * ST.
      */
-    // private LinearProbingHashST<String, ArrayList<Integer>> noun;
+    private LinearProbingHashST<String, ArrayList<Integer>> noun;
     /**
      * Constructs the object.
      * constructor takes the name of the two input files.
