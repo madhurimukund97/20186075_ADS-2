@@ -38,7 +38,6 @@ public final class Solution {
 			break;
 			default:
 			break;
-		}
-		
+		}		
 	}
 }
