@@ -18,26 +18,26 @@ public final class Solution {
 		String synset = StdIn.readString();
 		String hypernym = StdIn.readString();
 		String str = StdIn.readString();
+		try {
 		switch (str) {
 			case "Graph":
-				try {
+				
 					WordNet wn = new WordNet(synset,hypernym);
-				} catch (Exception e) {
-					System.out.println(e.getMessage());
-				}
+				
 			break;
 			case "Queries":
-			try {
+			
 				String[] str1 = StdIn.readString().split(" ");
 				if (str1[0].equals("null")) {
-					System.out.println("IllegalArgumentException");
+					throw new IllegalArgumentException("IllegalArgumentException");
 				}
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
+			
 			break;
 			default:
 			break;
+		}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}		
 	}
 }
