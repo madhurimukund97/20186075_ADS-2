@@ -1,6 +1,22 @@
 import java.util.Arrays;
 public class WordNet {
     /**
+     * declaration of digraph.
+     */
+    private Digraph dg;
+    /**
+     * declaration of SAP.
+     */
+    private SAP sap;
+    /**
+     * declaration of ST.
+     */
+    // private LinearProbingHashST<Integer, String> id;
+    /**
+     * ST.
+     */
+    // private LinearProbingHashST<String, ArrayList<Integer>> noun;
+    /**
      * Constructs the object.
      * constructor takes the name of the two input files.
      *
@@ -15,24 +31,24 @@ public class WordNet {
         
     }
     private int ver;
-    /**
-     * Reads a file.
-     *
-     * @param      synets  The synets
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public String[] readFile(String synets) {
-        In inp = new In("./Files/" + synets);
-        String[] str = null;
-        while (!inp.isEmpty()) {
-            String[] lines = inp.readString().split(",");
-            System.out.println(Arrays.toString(lines));
-            int inp1 = Integer.parseInt(lines[0]);
-            str = lines[1].split(" ");
-        }
-        return str;
-    }
+    // /**
+    //  * Reads a file.
+    //  *
+    //  * @param      synets  The synets
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public String[] readFile(String synets) {
+    //     In inp = new In("./Files/" + synets);
+    //     String[] str = null;
+    //     while (!inp.isEmpty()) {
+    //         String[] lines = inp.readString().split(",");
+    //         System.out.println(Arrays.toString(lines));
+    //         int inp1 = Integer.parseInt(lines[0]);
+    //         str = lines[1].split(" ");
+    //     }
+    //     return str;
+    // }
     /**
      * read synset file.
      *
@@ -79,6 +95,7 @@ public class WordNet {
                 if (digraph.outdegree(j) == 0) {
                     temp++;
                 }
+                System.out.println(temp);
             }
             if (temp > 1) {
                     throw new IllegalArgumentException("Multiple roots");
