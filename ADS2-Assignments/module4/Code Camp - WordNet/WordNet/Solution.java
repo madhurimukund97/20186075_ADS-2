@@ -37,8 +37,11 @@ public final class Solution {
                         throw new IllegalArgumentException(
                             "IllegalArgumentException");
                     }
-                    System.out.println("distance = " + wn1.distance(qarray[0],
-                                       qarray[1]) + ", ancestor = " + wn1.sap(qarray[0],
+                    System.out.println(
+                    "distance = " + wn1.distance(
+                            qarray[0],
+                    qarray[1]) + ", ancestor = " + wn1.sap(
+                                       qarray[0],
                                                qarray[1]));
                 }
             } catch (Exception e) {
