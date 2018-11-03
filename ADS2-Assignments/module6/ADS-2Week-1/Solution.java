@@ -46,9 +46,13 @@ class PageRank {
 	public String toString() {
         // System.out.println(
             // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
+        String str = "";
         System.out.println(dg.toString());
         System.out.println("\n");
-        String str = "";
+        for (int i = 0; i < vertices; i++) {
+        	str = str + i + "-" + getPR(vertices);
+        	// System.out.println(getPR);
+        }
         return str;
 	}
 }
