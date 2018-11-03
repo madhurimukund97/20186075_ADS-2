@@ -2,6 +2,7 @@
  * Class for page rank.
  */
 class PageRank {
+    LinearProbingHashST<Integer, Integer> lst;
     /**
      * vertices count.
      */
