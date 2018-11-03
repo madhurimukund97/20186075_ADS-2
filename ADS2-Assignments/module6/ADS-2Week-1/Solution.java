@@ -44,8 +44,8 @@ class PageRank {
 	 * @return     String representation of the object.
 	 */
 	public String toString() {
-        // System.out.println(
-        //     dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
+        System.out.println(
+            dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         System.out.println(dg.toString());
         System.out.println("\n");
         String str = "";
@@ -84,6 +84,7 @@ public class Solution {
 			}
 		}
 
+
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
@@ -106,6 +107,7 @@ public class Solution {
 			String searchword = searchquery[1];
 			System.out.println(wsobj.iAmFeelingLucky(searchword));
 		}
+		System.out.println(pg.toString());
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
 		// pass the word to iAmFeelingLucky method of web search
