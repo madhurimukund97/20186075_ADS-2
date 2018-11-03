@@ -78,7 +78,7 @@ public class Solution {
 		PageRank pg = new PageRank(dg);
 		while (StdIn.hasNextLine()) {
 			String[] adjlist = StdIn.readLine().split(" ");
-			for (int i = 0; i < adjlist.length; i++) {
+			for (int i = 1; i < adjlist.length; i++) {
 				dg.addEdge(Integer.parseInt(
 					adjlist[0]),Integer.parseInt(adjlist[i]));
 			}
