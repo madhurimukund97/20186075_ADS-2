@@ -44,8 +44,8 @@ class PageRank {
 	 * @return     String representation of the object.
 	 */
 	public String toString() {
-        System.out.println(
-            dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
+        // System.out.println(
+            // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         System.out.println(dg.toString());
         System.out.println("\n");
         String str = "";
