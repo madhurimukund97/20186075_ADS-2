@@ -50,7 +50,7 @@ class PageRank {
         System.out.println(dg.toString());
         System.out.println("\n");
         for (int i = 0; i < vertices; i++) {
-        	str = str + i + "-" + getPR(vertices);
+        	str = str + i + "-" + getPR(i);
         	// System.out.println(getPR);
         }
         return str;
