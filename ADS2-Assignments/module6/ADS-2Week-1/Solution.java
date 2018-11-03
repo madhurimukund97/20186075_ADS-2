@@ -2,6 +2,9 @@
  * Class for page rank.
  */
 class PageRank {
+    /**
+     * { var_description }.
+     */
     LinearProbingHashST<Integer, Integer> lst;
     /**
      * vertices count.
@@ -117,17 +120,12 @@ public final class Solution {
                     adjlist[0]),Integer.parseInt(adjlist[i]));
             }
         }
-        // iterate count of vertices times 
+        // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
-        
-        
         // Create page rank object and pass the graph object to the constructor
-        
         // print the page rank object
-        
         // This part is only for the final test case
-        
         // File path to the web content
         String file = "WebContent.txt";
         // instantiate web search object
