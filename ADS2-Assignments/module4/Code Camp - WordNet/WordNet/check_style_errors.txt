@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:1: Missing a Javadoc comment. [JavadocType]
@@ -267,19 +265,13 @@ Starting audit...
 Audit done.
 Checkstyle ends with 65 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
@@ -413,6 +405,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
