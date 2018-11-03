@@ -31,14 +31,11 @@ class PageRank {
             for (int j = 1; j < i; j++) {
                 Iterable<Integer> adj = dg.adj(j);
                 for (int k : adj) {
-
+                    k++;
                 }
-
             }
         }
-        
         return prvalue;
-
     }
     /**
      * Returns a string representation of the object.
@@ -119,8 +116,6 @@ public final class Solution {
                     adjlist[0]),Integer.parseInt(adjlist[i]));
             }
         }
-
-
         // iterate count of vertices times 
         // to read the adjacency list from std input
         // and build the graph
@@ -134,7 +129,6 @@ public final class Solution {
         
         // File path to the web content
         String file = "WebContent.txt";
-        
         // instantiate web search object
         WebSearch wsobj = new WebSearch(pg,file);
         // and pass the page rank object and the file path to the constructor
@@ -149,6 +143,5 @@ public final class Solution {
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
-        
     }
 }
