@@ -108,6 +108,7 @@ public class Solution {
 			System.out.println(wsobj.iAmFeelingLucky(searchword));
 		}
 		System.out.println(pg.toString());
+		System.out.println("\n");
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
 		// pass the word to iAmFeelingLucky method of web search

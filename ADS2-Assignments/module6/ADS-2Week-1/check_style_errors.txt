@@ -248,7 +248,7 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:101: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:103:52: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:104: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:115: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
