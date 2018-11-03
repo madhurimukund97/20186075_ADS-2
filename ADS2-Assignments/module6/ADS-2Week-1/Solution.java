@@ -25,6 +25,16 @@ class PageRank {
 	 */
 	public double getPR(int v) {
 		double prvalue = 0.0;
+		for (int i = 1; i < v; i++) {
+			for (int j = 1; j < i; j++) {
+				Iterable<Integer> adj = dg.adj(j);
+				for (int k : adj) {
+
+				}
+
+			}
+		}
+		
 		return prvalue;
 
 	}
@@ -34,8 +44,8 @@ class PageRank {
 	 * @return     String representation of the object.
 	 */
 	public String toString() {
-        System.out.println(
-            dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
+        // System.out.println(
+        //     dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         System.out.println(dg.toString());
         System.out.println("\n");
         String str = "";

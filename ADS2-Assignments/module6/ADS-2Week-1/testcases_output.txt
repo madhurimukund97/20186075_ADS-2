@@ -248,6 +248,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "q
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:72)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
