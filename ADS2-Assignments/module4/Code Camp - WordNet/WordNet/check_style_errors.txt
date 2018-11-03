@@ -278,37 +278,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:28: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:29: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:30: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:37: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:50:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:51:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:54: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:55:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:56:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:90:22: Parameter item should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:105: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:127: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:137: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:140: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:142: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:149: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:150:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:152:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:152:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:152:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:152:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:156:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:160:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:164:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:165: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\Stack.java:167: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module4\Code Camp - WordNet\WordNet\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
