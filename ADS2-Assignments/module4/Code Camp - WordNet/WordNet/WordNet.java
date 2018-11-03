@@ -1,5 +1,8 @@
-import java.util.List;
-import java.util.ArrayList;     
+// import java.util.List;
+import java.util.ArrayList;
+/**
+ * Class for word net.
+ */
 public class WordNet {
     /**
      * declaration of digraph.
@@ -28,39 +31,17 @@ public class WordNet {
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
      */
-    public WordNet(String synsets, String hypernyms) {
+    public WordNet(final String synsets, final String hypernyms) {
         // lp = new LinearProbingHashST<String, Integer>();
         // // int synset = readSynsetFile(synsets);
         // digrph = readHypernymFile(hypernyms, synset);
         id = new ArrayList<String>();
         noun = new LinearProbingHashST<String, ArrayList<Integer>>();
-        ver = SynsetFile(synsets);
+        ver = synsetFile(synsets);
         dg = new Digraph(ver);
-        HypernymFile(hypernyms);
+        hypernymFile(hypernyms);
         sap = new SAP(dg);
-        
     }
-    // /**
-    //  * checks the outdegrees.
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
-    // public int noOfOutdegree() {
-    //     int max = 0;
-    //     for (int i = 0; i < ver; i++) {
-    //         if (dg.outdegree(i) == 0) {
-    //             max++;
-    //         }
-    //     }
-    //     return max;
-    // }
-    /**
-     * display output.
-     */
-    
-    
-
-    
     // /**
     //  * Reads a file.
     //  *
@@ -82,25 +63,22 @@ public class WordNet {
     /**
      * read synset file.
      *
-     * @param      synset     The synset
-     * @param      hypernyms  The hypernyms
+     * @param      synset  The synset
+     *
+     * @return     { description_of_the_return_value }
      */
-    public int SynsetFile(String synset) {
+    public int synsetFile(final String synset) {
         // int synsetid = 0;
-            int ver = 0;
+            int ver1 = 0;
             In inp = new In("./Files/" + synset);
             while (!inp.isEmpty()) {
-                ver++;
-
-
+                ver1++;
                 String[] arr = inp.readLine().split(",");
                 int id1 = Integer.parseInt(arr[0]);
-                id.add(id1,arr[1]);
+                id.add(id1, arr[1]);
                 String[] arr1 = arr[1].split(" ");
-                for (int i = 0; i <  arr1.length; i++) {
+                for (int i = 0; i < arr1.length; i++) {
                     ArrayList<Integer> list;
-                    // String[] arr1 = arr[1].split(" ");
-                    // id.put(Integer.parseInt(arr[0]), arr[1]);
                     if (noun.contains(arr1[i])) {
                     list = noun.get(arr1[i]);
                     list.add(id1);
@@ -110,22 +88,15 @@ public class WordNet {
                 }
                 noun.put(arr1[i], list);
             }
-                
-                // synsetid = Integer.parseInt(file[0]);
-                // String[]  = file[1].split(" ");
             }
-            // Digraph dobj = new Digraph(ver);
-            // HypernymFile(hypernyms, dobj);
-        
-        return ver;
+        return ver1;
     }
     /**
      * read hypernym file.
      *
      * @param      hypernym  The hypernym
-     * @param      synsetv   The synsetv
      */
-    public void HypernymFile(String hypernym) {
+    public void hypernymFile(final String hypernym) {
         int temp = 0;
         In inp = new In("./Files/" + hypernym);
         while (!inp.isEmpty()) {
@@ -133,11 +104,11 @@ public class WordNet {
             String[] line = inp.readString().split(",");
             for (int i = 1; i < line.length; i++) {
                 //System.out.println(line[0]+" " +line[1]);
-                dg.addEdge(Integer.parseInt(line[0]), Integer.parseInt(line[i]));
+                dg.addEdge(Integer.parseInt(
+                    line[0]), Integer.parseInt(line[i]));
             }
         }
     }
-
     /**
      * Iterable noun.
      * returns all WordNet nouns.
@@ -145,7 +116,7 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public Iterable<String> nouns() {
-        return noun.keys(); 
+        return noun.keys();
     }
     /**
      * Determines if noun.
@@ -154,7 +125,7 @@ public class WordNet {
      *
      * @return     True if noun, False otherwise.
      */
-    public boolean isNoun(String word) {
+    public boolean isNoun(final String word) {
         if (word.equals("null")) {
             throw new IllegalArgumentException();
         }
@@ -162,20 +133,20 @@ public class WordNet {
     }
     /**
      * distance between nounA and nounB (defined below).
-     * 
+     *
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
      *
      * @return     { description_of_the_return_value }
      */
-    public int distance(String nounA, String nounB) {
+    public int distance(final String nounA, final String nounB) {
         ArrayList<Integer> arr1 = noun.get(nounA);
         ArrayList<Integer> arr2 = noun.get(nounB);
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }
-        return sap.length(arr1,arr2);
+        return sap.length(arr1, arr2);
 
     }
     /**
@@ -188,42 +159,18 @@ public class WordNet {
      *
      * @return     { description_of_the_return_value }
      */
-    public String sap(String nounA, String nounB) {
+    public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> arr1 = noun.get(nounA);
         ArrayList<Integer> arr2 = noun.get(nounB);
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }
-        int ancestor = sap.ancestor(arr1,arr2);
+        int ancestor = sap.ancestor(arr1, arr2);
         return id.get(ancestor);
     }
-
-    // public void display() {
-    //     DirectedCycle dircycle = new DirectedCycle(graph);
-    //     if (directedCycle.hasCycle()) {
-    //         throw new IllegalArgumentException("Cycle detected");
-    //     } else {
-    //         int degree = 0;
-
-    //         for (int i = 0; i < graph.V(); i++) {
-    //             if (graph.outdegree(i) == 0) {
-    //                 degree++;
-    //             }
-    //         }
-    //         if (degree > 1) {
-    //             throw new IllegalArgumentException("Multiple roots");
-    //         }
-    //         System.out.println(graph);
-    //     }
-    // }
     /**
-     * do unit testing of this class.
-     *
-     * @param      args  The arguments
+     * display method.
      */
-    // public static void main(String[] args) {
-
-    // }
     public void display() {
         DirectedCycle dc = new DirectedCycle(dg);
         if (dc.hasCycle()) {

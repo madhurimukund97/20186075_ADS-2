@@ -1,20 +1,23 @@
+/**
+ * Class for sap.
+ */
 public class SAP {
-    private Digraph dg;
-    // private BreadthFirstDirectedPaths[] bfs;
-    int distance;
-
     /**
-     * constructor takes a digraph (not necessarily a DAG).
-     *
-     * @param      DAG   The dag
-     *
-     * @return     { description_of_the_return_value }
+     * { var_description }.
      */
-    public SAP(Digraph dg) {
-        this.dg = dg;
+    private Digraph dg;
+    /**
+     * { var_description }.
+     */
+    private int distance;
+    /**
+     * Constructs the object.
+     *
+     * @param      dg1    { parameter_description }
+     */
+    public SAP(final Digraph dg1) {
+        this.dg = dg1;
         this.distance = 0;
-
-
     }
     // /**
     //  * length of shortest ancestral path between v and w.
@@ -95,7 +98,7 @@ public class SAP {
      *
      * @return     { description_of_the_return_value }
      */
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         // if (v == null || w == null) {
         //     throw new NullPointerException();
         // }
@@ -126,23 +129,7 @@ public class SAP {
      *
      * @return     { description_of_the_return_value }
      */
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
-        // if (v == null || w == null) {
-        //     throw new NullPointerException();
-        // }
-
-        // int len = Integer.MAX_VALUE;
-        // int ances = -1;
-        // for (int i : v) {
-        //     for (int j : w) {
-        //         int len1 = length(i, j);
-        //         if (len1 != -1 && len1 < len) {
-        //             len = len1;
-        //             ances = ancestor(i, j);
-        //         }
-        //     }
-        // }
-        // return ances;
+    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfsv = new BreadthFirstDirectedPaths(dg, v);
         BreadthFirstDirectedPaths bfsw = new BreadthFirstDirectedPaths(dg, w);
         distance = Integer.MAX_VALUE;
@@ -159,14 +146,5 @@ public class SAP {
             }
         }
         return ances;
-    }
-    
-    /**
-     * do unit testing of this class.
-     *
-     * @param      args  The arguments
-     */
-    public static void main(String[] args) {
-        
     }
 }
