@@ -14,7 +14,6 @@ class PageRank {
      * Digraph object.
      */
     private Digraph dg;
-    private double[] prlist;
     /**
      * prvalue.
      */
@@ -38,20 +37,26 @@ class PageRank {
         lst = new LinearProbingHashST<Integer, Double>();
         // double pas = 0.0;
         double prvalue = 0.0;
-        prlist = new double[dg.vertex()];
-        for (int i = 0; i < dg.vertex(); i++) {
-            prlist[i] = 1.0 / dg.vertex();
+        for (int i = 1; i < dg.vertex(); i++) {
+            lst.put(i, 1.0/dg.vertex());
         }
         for (int i = 0; i < 1000; i++) {
             for (int j = 0; j < dg.vertex(); j++) {
-                for (int k = 0; k < dg.vertex(); k++) {
-                    for(int h : dg.adj(k)) {
-                        if (h == j) {
-                            prvalue = prvalue + (double) (prlist[k] / dg.outdegree(k));
-                        }
-                    }   
+                // Iterable<Integer> adjobj = dg.adj(j);
+                // for (int k = 0; k < dg.vertex(); k++) {
+                for(int h : dg.adj(j)) {
+                    if (dg.outdegree(h) == 0) {
+                        prvalue = (double)1 / dg.vertex();
+                        lst.put(j, prvalue);
+
+                        // k++;
+                    }
+                    else {
+                        prvalue = (double)1 / dg.vertex();
+                        lst.put(j, prvalue);  
+                    }
                 }
-            return prlist[j];
+            // }
             }
         }   
         //     // // for (int j = 1; j < v; j++) {
