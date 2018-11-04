@@ -46,13 +46,13 @@ class PageRank {
                 // for (int k = 0; k < dg.vertex(); k++) {
                 // for(int h : dg.adj(k)) {
                     if (dg.outdegree(j) == 0) {
-                        prvalue = 1 / dg.vertex();
+                        prvalue = (double)1 / dg.vertex();
                         lst.put(j, prvalue);
 
                         // k++;
                     }
                     else {
-                       prvalue = 1 / dg.vertex();
+                        prvalue = (double)1 / dg.vertex();
                         lst.put(j, prvalue);  
                     }
                 // }
