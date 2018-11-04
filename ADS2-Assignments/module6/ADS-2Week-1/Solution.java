@@ -42,15 +42,14 @@ class PageRank {
         }
         for (int i = 0; i < 1000; i++) {
             for (int j = 0; j < dg.vertex(); j++) {
-                
-                for(int h : dg.adj(j)) {
-                    prvalue = 1.0 / dg.vertex();
-                    lst.put(j, prvalue);
-                    if (dg.outdegree(h) != 0) {
-                        h++;
-                    }
-                    
+                for (int k = 0; k < dg.vertex(); k++) {
+                    for(int h : dg.adj(k)) {
+                        if (h == j) {
+                            prvalue = prvalue + (double) (k / dg.outdegree(k));
+                        }
+                    }   
                 }
+            return prvalue;
             }
         }   
         //     // // for (int j = 1; j < v; j++) {
