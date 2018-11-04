@@ -31,8 +31,8 @@ class PageRank {
      */
     public double getPR(final int v) {
         double prvalue = 0.0;
-        for (int i = 1; i < v; i++) {
-            for (int j = 1; j < i; j++) {
+        for (int i = 1; i < 1000; i++) {
+            for (int j = 1; j < v; j++) {
                 Iterable<Integer> adj = dg.adj(j);
                 for (int k : adj) {
                     k++;
@@ -53,8 +53,8 @@ class PageRank {
         System.out.println(dg.toString());
         System.out.println();
         for (int i = 0; i < dg.vertex(); i++) {
-            str = str + dg.vertex() + "-" + getPR(dg.vertex());
-            // System.out.println(getPR);
+            str = str + i + "-" + getPR(dg.vertex());
+            System.out.println();
         }
         return str;
     }
