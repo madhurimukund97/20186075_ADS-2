@@ -14,6 +14,7 @@ class PageRank {
      * Digraph object.
      */
     private Digraph dg;
+    private double[] prlist;
     /**
      * prvalue.
      */
@@ -38,18 +39,18 @@ class PageRank {
         // double pas = 0.0;
         double prvalue = 0.0;
         for (int i = 1; i < dg.vertex(); i++) {
-            lst.put(i, 1.0/dg.vertex());
+            prlist[i] = 1.0 / dg.vertex();
         }
         for (int i = 0; i < 1000; i++) {
             for (int j = 0; j < dg.vertex(); j++) {
                 for (int k = 0; k < dg.vertex(); k++) {
                     for(int h : dg.adj(k)) {
                         if (h == j) {
-                            prvalue = prvalue + (double) (k / dg.outdegree(k));
+                            prvalue = prvalue + (double) (prlist[k] / dg.outdegree(k));
                         }
                     }   
                 }
-            return prvalue;
+            return prlist[j];
             }
         }   
         //     // // for (int j = 1; j < v; j++) {
