@@ -51,10 +51,10 @@ class PageRank {
 
                         // k++;
                     }
-                    else {
-                        prvalue = (double)1 / dg.vertex();
-                        lst.put(j, prvalue);  
-                    }
+                    // else {
+                    //     prvalue = (double)1 / dg.vertex();
+                    //     lst.put(j, prvalue);  
+                    // }
                 // }
             // }
             }
