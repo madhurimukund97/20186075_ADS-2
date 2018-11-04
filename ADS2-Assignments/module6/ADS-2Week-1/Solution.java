@@ -15,12 +15,17 @@ class PageRank {
      */
     private Digraph dg;
     /**
+     * prvalue.
+     */
+    private double prvalue;
+    /**
      * Constructs the object.
      *
      * @param      dg1   The dg 1
      */
     PageRank(final Digraph dg1) {
         this.dg = dg1;
+        prvalue = 1/dg.vertex();
     }
     /**
      * Gets the pr.
