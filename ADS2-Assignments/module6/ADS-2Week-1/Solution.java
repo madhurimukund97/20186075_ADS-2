@@ -17,7 +17,7 @@ class PageRank {
     /**
      * prvalue.
      */
-    private double prvalue;
+    private double prvalue = 0.0;
     /**
      * Constructs the object.
      *
@@ -25,7 +25,6 @@ class PageRank {
      */
     PageRank(final Digraph dg1) {
         this.dg = dg1;
-        prvalue = 1/dg1.vertex();
     }
     /**
      * Gets the pr.
@@ -36,14 +35,24 @@ class PageRank {
      */
     public double getPR(final int v) {
         lst = new LinearProbingHashST<Integer, Double>();
-        double prvalue1 = 0.0;
+        // double prvalue1 = 0.0;
         for (int i = 1; i < 1000; i++) {
-            for (int j = 1; j < v; j++) {
-                Iterable<Integer> adj = dg.adj(j);
-                for (int k : adj) {
-                    k++;
-                }
+            if (dg.outdegree(i) == 0) {
+                Double prvalue = (double) 1 / dg.vertex();
+                lst.put(i, prvalue);
+            } else {
+                Double prvalue = (double) 1 / dg.vertex();
+                lst.put(i, prvalue);
             }
+            // // for (int j = 1; j < v; j++) {
+            //     if (dg.outdegree(j) == 0) {
+
+            //     }
+            //     Iterable<Integer> adj = dg.adj(j);
+            //     for (int k : adj) {
+            //         k++;
+            //     }
+            // }
         }
         return prvalue;
     }
