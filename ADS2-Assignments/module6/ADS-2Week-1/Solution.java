@@ -36,12 +36,15 @@ class PageRank {
     public double getPR(final int v) {
         lst = new LinearProbingHashST<Integer, Double>();
         double prvalue = 0.0;
+        for (int i = 1; i < dg.vertex(); i++) {
+            lst.put(i, 1.0/dg.vertex());
+        }
         for (int i = 1; i < 1000; i++) {
             for (int j = 1; j < dg.vertex(); j++) {
                 // Iterable<Integer> adjobj = dg.adj(j);
                 for(int k : dg.adj(j)) {
                     if (k == 0) {
-                    prvalue = lst.get(k) / dg.outdegree(k);
+                        prvalue = lst.get(k) / dg.outdegree(k);
                 }
                 }
                     lst.put(j, prvalue);
