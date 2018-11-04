@@ -35,23 +35,23 @@ class PageRank {
      */
     public double getPR(final int v) {
         lst = new LinearProbingHashST<Integer, Double>();
-        double pas = 0.0;
-        // double prvalue = 0.0;
-        // for (int i = 1; i < dg.vertex(); i++) {
-        //     lst.put(i, 1.0/dg.vertex());
-        // }
-        // for (int i = 1; i < 1000; i++) {
-        //     for (int j = 1; j < dg.vertex(); j++) {
-        //         // Iterable<Integer> adjobj = dg.adj(j);
-        //         for(int k : dg.adj(j)) {
-        //             if (k == 0) {
-        //                 prvalue = lst.get(k) / dg.outdegree(j);
-        //                 // k++;
-        //             }
-        //         }
-        //         lst.put(j, prvalue);
-        //     }
-            
+        // double pas = 0.0;
+        double prvalue = 0.0;
+        for (int i = 1; i < dg.vertex(); i++) {
+            lst.put(i, 1.0/dg.vertex());
+        }
+        for (int i = 1; i < 1000; i++) {
+            for (int j = 1; j < dg.vertex(); j++) {
+                // Iterable<Integer> adjobj = dg.adj(j);
+                for(int k : dg.adj(j)) {
+                    if (dg.outdegree(k) == 0) {
+                        prvalue = 1.0 / dg.vertex();
+                        // k++;
+                    }
+                }
+                lst.put(j, prvalue);
+            }
+        }   
         //     // // for (int j = 1; j < v; j++) {
         //     //     if (dg.outdegree(j) == 0) {
 
@@ -62,16 +62,16 @@ class PageRank {
         //     //     }
         //     // }
         // }
-        for (int i = 0; i < dg.vertex(); i++) {
-            if (dg.outdegree(i) == 0) {
-                pas = (double) 1 / dg.vertex();
-                lst.put(i, pas);
-            } else {
-                pas = (double) 1 / dg.vertex();
-                lst.put(i, pas);
-            }
-        }
-        return pas;
+        // for (int i = 0; i < dg.vertex(); i++) {
+        //     if (dg.outdegree(i) == 0) {
+        //         pas = (double) 1 / dg.vertex();
+        //         lst.put(i, pas);
+        //     } else {
+        //         pas = (double) 1 / dg.vertex();
+        //         lst.put(i, pas);
+        //     }
+        // }
+        return prvalue;
     }
     /**
      * Returns a string representation of the object.
