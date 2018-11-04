@@ -51,7 +51,7 @@ class PageRank {
             // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         // System.out.println();
         String str = "";
-        System.out.println(dg.toString());
+        // System.out.println(dg.toString());
         System.out.println();
         for (int i = 0; i < dg.vertex(); i++) {
             str = dg.vertex() + "-" + getPR(dg.vertex());
@@ -138,7 +138,7 @@ public final class Solution {
             String searchword = searchquery[1];
             System.out.println(wsobj.iAmFeelingLucky(searchword));
         }
-        System.out.println(pg.display());
+        System.out.println(dg.toString());
         // System.out.println("\n");
         // read the search queries from std in
         // remove the q= prefix and extract the search word
