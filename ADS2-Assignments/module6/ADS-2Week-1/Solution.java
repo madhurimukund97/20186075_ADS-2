@@ -45,6 +45,7 @@ class PageRank {
                 for(int k : dg.adj(j)) {
                     if (k == 0) {
                         prvalue = lst.get(k) / dg.outdegree(k);
+                        k++;
                     }
                 }
                 lst.put(j, prvalue);
