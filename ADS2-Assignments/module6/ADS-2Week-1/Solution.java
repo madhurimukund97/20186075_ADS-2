@@ -17,7 +17,7 @@ class PageRank {
     /**
      * prvalue.
      */
-    private double prvalue = 0.0;
+    // private double prvalue = 0.0;
     /**
      * Constructs the object.
      *
@@ -35,14 +35,14 @@ class PageRank {
      */
     public double getPR(final int v) {
         lst = new LinearProbingHashST<Integer, Double>();
-        // double prvalue1 = 0.0;
+        double prvalue = 0.0;
         for (int i = 1; i < 1000; i++) {
             for (int j = 1; j < dg.vertex(); j++) {
                 if (dg.outdegree(j) == 0) {
-                Double prvalue = (double) 1 / dg.vertex();
-                lst.put(i, prvalue);
+                prvalue = (double) 1 / dg.vertex();
+                lst.put(j, prvalue);
             } else {
-                Double prvalue = (double) 1 / dg.vertex();
+                prvalue = (double) 1 / dg.vertex();
                 lst.put(i, prvalue);
             }
             }
