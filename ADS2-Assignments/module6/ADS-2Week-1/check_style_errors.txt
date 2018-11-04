@@ -289,14 +289,14 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:41:27: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:41:28: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:43:29: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:47:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:53:21: '}' at column 21 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:56: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:61: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:66: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:86: Unused Javadoc tag. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:160:33: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:173:44: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:46:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:53: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:62: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:82: Unused Javadoc tag. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:156:33: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:169:44: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...

@@ -42,21 +42,17 @@ class PageRank {
         }
         for (int i = 0; i < 1000; i++) {
             for (int j = 0; j < dg.vertex(); j++) {
-                // Iterable<Integer> adjobj = dg.adj(j);
-                // for (int k = 0; k < dg.vertex(); k++) {
+                
                 for(int h : dg.adj(j)) {
-                    if (dg.outdegree(h) == 0) {
-                        // prvalue = (double)1 / dg.vertex();
-                        lst.put(j, prvalue);
-
-                        // k++;
-                    }
-                    else {
-                        prvalue = 1.0 / dg.vertex();
+                    // if (dg.outdegree(h) == 0) {
+                    //     prvalue = (double)1 / dg.vertex();
+                    //     lst.put(j, prvalue);
+                    // }
+                    // else {
+                        prvalue = 1.0 / dg.outdegree(j);
                         lst.put(j, prvalue);  
-                    }
+                    // }
                 }
-            // }
             }
         }   
         //     // // for (int j = 1; j < v; j++) {
