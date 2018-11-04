@@ -51,9 +51,9 @@ class PageRank {
             // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         String str = "";
         System.out.println(dg.toString());
-        System.out.println("\n");
-        for (int i = 0; i < vertices; i++) {
-            str = str + i + "-" + getPR(i);
+        System.out.println();
+        for (int i = 0; i < dg.vertex(); i++) {
+            str = str + dg.vertex() + "-" + getPR(dg.vertex());
             // System.out.println(getPR);
         }
         return str;
@@ -120,7 +120,7 @@ public final class Solution {
                     adjlist[0]),Integer.parseInt(adjlist[i]));
             }
         }
-        System.out.println(pg);
+        // System.out.println(pg);
         // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
