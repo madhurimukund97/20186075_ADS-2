@@ -43,13 +43,13 @@ class PageRank {
         for (int i = 0; i < 1000; i++) {
             for (int j = 0; j < dg.vertex(); j++) {
                 // Iterable<Integer> adjobj = dg.adj(j);
-                for(int k : dg.adj(j)) {
-                    if (dg.outdegree(k) == 0) {
+                // for(int k : dg.adj(j)) {
+                    if (dg.outdegree(j) == 0) {
                         prvalue = 1.0 / dg.vertex();
                         // k++;
                     }
-                }
-                lst.put(j, prvalue);
+                // }
+                lst.put(i, prvalue);
             }
         }   
         //     // // for (int j = 1; j < v; j++) {
