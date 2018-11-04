@@ -119,8 +119,8 @@ public final class Solution {
                 dg.addEdge(Integer.parseInt(
                     adjlist[0]),Integer.parseInt(adjlist[i]));
             }
-            System.out.println(pg);
         }
+        System.out.println(pg);
         // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
