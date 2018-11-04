@@ -40,7 +40,7 @@ class PageRank {
             for (int j = 1; j < dg.vertex(); j++) {
                 if (dg.outdegree(j) == 0) {
                 prvalue = (double) 1 / dg.vertex();
-                lst.put(j, prvalue);
+                lst.put(i, prvalue);
             } else {
                 prvalue = (double) 1 / dg.vertex();
                 lst.put(i, prvalue);
