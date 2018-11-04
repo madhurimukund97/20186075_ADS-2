@@ -38,20 +38,22 @@ class PageRank {
         double prvalue = 0.0;
         for (int i = 1; i < 1000; i++) {
             for (int j = 1; j < dg.vertex(); j++) {
-                if (dg.outdegree(j) == 0) {
-                prvalue = (double) 1 / dg.vertex();
-                lst.put(i, prvalue);
-            } else {
-                prvalue = (double) 1 / dg.vertex();
-                lst.put(i, prvalue);
-            }
+                // Iterable<Integer> adjobj = dg.adj(j);
+                for(int k : dg.adj(j)) {
+                    if (k == 0) {
+                    prvalue = lst.get(k) / dg.outdegree(k);
+                }
+                }
+                    lst.put(j, prvalue);
+
+            
             }
             
             // // for (int j = 1; j < v; j++) {
             //     if (dg.outdegree(j) == 0) {
 
             //     }
-            //     Iterable<Integer> adj = dg.adj(j);
+            //     
             //     for (int k : adj) {
             //         k++;
             //     }
