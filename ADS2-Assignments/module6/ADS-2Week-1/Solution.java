@@ -46,15 +46,16 @@ class PageRank {
      *
      * @return     String representation of the object.
      */
-    public String toString() {
+    public String display() {
         // System.out.println(
             // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
+        // System.out.println();
         String str = "";
         System.out.println(dg.toString());
         System.out.println();
         for (int i = 0; i < dg.vertex(); i++) {
             str = dg.vertex() + "-" + getPR(dg.vertex());
-            // System.out.println(str);
+            System.out.println(str);
         }
         return str;
     }
@@ -137,8 +138,8 @@ public final class Solution {
             String searchword = searchquery[1];
             System.out.println(wsobj.iAmFeelingLucky(searchword));
         }
-        System.out.println(pg.toString());
-        System.out.println("\n");
+        System.out.println(pg.display());
+        // System.out.println("\n");
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
