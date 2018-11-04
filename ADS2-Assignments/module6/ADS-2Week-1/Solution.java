@@ -53,8 +53,8 @@ class PageRank {
         System.out.println(dg.toString());
         System.out.println();
         for (int i = 0; i < dg.vertex(); i++) {
-            str = str + i + "-" + getPR(dg.vertex());
-            System.out.println(str);
+            str = dg.vertex() + "-" + getPR(dg.vertex());
+            // System.out.println(str);
         }
         return str;
     }
