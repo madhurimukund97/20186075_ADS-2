@@ -37,13 +37,16 @@ class PageRank {
         lst = new LinearProbingHashST<Integer, Double>();
         // double prvalue1 = 0.0;
         for (int i = 1; i < 1000; i++) {
-            if (dg.outdegree(i) == 0) {
+            for (int j = 1; j < dg.vertex(); j++) {
+                if (dg.outdegree(j) == 0) {
                 Double prvalue = (double) 1 / dg.vertex();
                 lst.put(i, prvalue);
             } else {
                 Double prvalue = (double) 1 / dg.vertex();
                 lst.put(i, prvalue);
             }
+            }
+            
             // // for (int j = 1; j < v; j++) {
             //     if (dg.outdegree(j) == 0) {
 
