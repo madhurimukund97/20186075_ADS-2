@@ -291,7 +291,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:43:29: '1000' is a magic number. [MagicNumber]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:47:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:53:21: '}' at column 21 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:55:43: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:56: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:61: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:66: Line has trailing spaces. [RegexpSingleline]
@@ -299,7 +298,7 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:160:33: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Solution.java:173:44: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

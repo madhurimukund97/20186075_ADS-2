@@ -52,7 +52,7 @@ class PageRank {
                         // k++;
                     }
                     else {
-                        prvalue = (double)1 / dg.vertex();
+                        prvalue = 1.0 / dg.vertex();
                         lst.put(j, prvalue);  
                     }
                 }
