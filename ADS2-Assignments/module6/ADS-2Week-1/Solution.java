@@ -44,7 +44,7 @@ class PageRank {
                 // Iterable<Integer> adjobj = dg.adj(j);
                 for(int k : dg.adj(j)) {
                     if (k == 0) {
-                        prvalue = 1.0 / dg.outdegree(k);
+                        prvalue = 1 / dg.outdegree(k);
                         // k++;
                     }
                 }
