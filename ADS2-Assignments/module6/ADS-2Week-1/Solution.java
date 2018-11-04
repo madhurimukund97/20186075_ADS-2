@@ -25,7 +25,7 @@ class PageRank {
      */
     PageRank(final Digraph dg1) {
         this.dg = dg1;
-        prvalue = 1/dg.vertex();
+        prvalue = 1/dg1.vertex();
     }
     /**
      * Gets the pr.
@@ -35,7 +35,8 @@ class PageRank {
      * @return     The pr.
      */
     public double getPR(final int v) {
-        double prvalue = 0.0;
+        lst = new LinearProbingHashST<Integer, Double>();
+        double prvalue1 = 0.0;
         for (int i = 1; i < 1000; i++) {
             for (int j = 1; j < v; j++) {
                 Iterable<Integer> adj = dg.adj(j);
