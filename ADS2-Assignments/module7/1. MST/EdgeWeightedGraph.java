@@ -5,11 +5,11 @@ public class EdgeWeightedGraph {
     /**
      * variable vertex.
      */
-    private final int V;
+    private final int ver;
     /**
      * variable edge.
      */
-    private int E;
+    private int edg;
     /**
      * bag of adjacent vertices list.
      */
@@ -17,16 +17,16 @@ public class EdgeWeightedGraph {
     /**
      * Constructs the object.
      *
-     * @param      V integer vertex.
+     * @param      ver integer vertex.
      */
-    public EdgeWeightedGraph(final int V) {
-        if (V < 0) {
+    public EdgeWeightedGraph(final int ver1) {
+        if (ver1 < 0) {
             throw new IllegalArgumentException("Number of vertices must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ver = ver1;
+        this.edg = 0;
+        adj = (Bag<Edge>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -37,7 +37,7 @@ public class EdgeWeightedGraph {
      * @return vertex count
      */
     public int vertex() {
-        return V;
+        return ver;
     }
     /**
      * return edges.
@@ -45,7 +45,7 @@ public class EdgeWeightedGraph {
      * @return edge count
      */
     public int edge() {
-        return E;
+        return edg;
     }
     /**
      * Adds an edge.
@@ -57,7 +57,7 @@ public class EdgeWeightedGraph {
         int w = e.other(v);
         adj[v].add(e);
         adj[w].add(e);
-        E++;
+        edg++;
     }
     /**
      * returns adjacent vertex.
@@ -88,15 +88,15 @@ public class EdgeWeightedGraph {
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int v = 0; v < ver; v++) {
             int selfLoops = 0;
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-                // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
