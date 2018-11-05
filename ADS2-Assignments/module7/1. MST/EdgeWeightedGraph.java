@@ -5,11 +5,11 @@ public class EdgeWeightedGraph {
     /**
      * variable vertex.
      */
-    private final int V;
+    private final int ver;
     /**
      * variable edge.
      */
-    private int E;
+    private int edg;
     /**
      * bag of adjacent vertices list.
      */
@@ -19,14 +19,14 @@ public class EdgeWeightedGraph {
      *
      * @param      V integer vertex.
      */
-    public EdgeWeightedGraph(final int V) {
-        if (V < 0) {
+    public EdgeWeightedGraph(final int ver) {
+        if (ver < 0) {
             throw new IllegalArgumentException("Number of vertices must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ver = ver;
+        this.edg = 0;
+        adj = (Bag<Edge>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -36,16 +36,16 @@ public class EdgeWeightedGraph {
      *
      * @return vertex count
      */
-    public int V() {
-        return V;
+    public int ver() {
+        return ver;
     }
     /**
      * return edges.
      *
      * @return edge count
      */
-    public int E() {
-        return E;
+    public int edg() {
+        return edg;
     }
     /**
      * Adds an edge.
@@ -57,7 +57,7 @@ public class EdgeWeightedGraph {
         int w = e.other(v);
         adj[v].add(e);
         adj[w].add(e);
-        E++;
+        edg++;
     }
     /**
      * returns adjacent vertex.
@@ -88,7 +88,7 @@ public class EdgeWeightedGraph {
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int v = 0; v < ver; v++) {
             int selfLoops = 0;
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {

@@ -3,18 +3,15 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:12:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: 'V' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:20:8: Unused @param tag for 'V'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: 'ver' hides a field. [HiddenField]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: Expected @param tag for 'ver'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:24: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:39:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:47:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:96:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:97: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:99: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:1: Missing a Javadoc comment. [JavadocType]
