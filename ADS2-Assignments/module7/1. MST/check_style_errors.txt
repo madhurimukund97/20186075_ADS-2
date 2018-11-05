@@ -3,47 +3,18 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:20:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: 'ver' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: Expected @param tag for 'ver'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:12:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: 'V' hides a field. [HiddenField]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:22:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:24: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:96:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:97: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:99: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:13:24: Parameter G should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:13:42: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:25:23: Parameter G should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:25:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:25:44: Parameter s should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:27: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:31: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:34: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:35: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:39: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:40:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:40:23: Parameter G should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:40:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:40:44: Parameter v should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:43: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:44: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:47:5: Class 'LazyPrimMST' looks like designed for extension (can be subclassed), but the method 'edges' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LazyPrimMST' final or making the method 'edges' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:47:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:51:5: Class 'LazyPrimMST' looks like designed for extension (can be subclassed), but the method 'weight' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LazyPrimMST' final or making the method 'weight' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\LazyPrimMST.java:51:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\MinPQ.java:6: Missing a Javadoc comment. [JavadocType]
