@@ -1,13 +1,12 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Edge.java:23:27: 'v' hides a field. [HiddenField]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Edge.java:23:40: 'w' hides a field. [HiddenField]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Edge.java:23:56: 'weight' hides a field. [HiddenField]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Edge.java:42: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\EdgeWeightedGraph.java:12:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]

@@ -53,8 +53,6 @@ public class Edge implements Comparable<Edge> {
         }  else {
             throw new IllegalArgumentException("Illegal endpoint");
         }
-
-
     }
     /**
      * compare to method.
@@ -66,5 +64,4 @@ public class Edge implements Comparable<Edge> {
     public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
-
 }
