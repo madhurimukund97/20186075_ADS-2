@@ -17,11 +17,12 @@ public class EdgeWeightedGraph {
     /**
      * Constructs the object.
      *
-     * @param      ver integer vertex.
+     * @param      ver1 integer vertex.
      */
     public EdgeWeightedGraph(final int ver1) {
         if (ver1 < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
         }
         this.ver = ver1;
         this.edg = 0;
