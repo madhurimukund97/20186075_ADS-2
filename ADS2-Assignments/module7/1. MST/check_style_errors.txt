@@ -7,36 +7,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:13:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:14:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:17: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:18:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:19:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:56: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:65:25: Parameter item should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:70: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:71: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:82: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:86: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:102: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:105: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:107: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:110: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:114: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:115:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:124:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:128:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:129: 'if' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 27 errors.
-Starting audit...
 Audit done.
 Starting audit...
 Audit done.
