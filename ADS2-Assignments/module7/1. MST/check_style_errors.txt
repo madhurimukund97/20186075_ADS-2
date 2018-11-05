@@ -29,15 +29,13 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:29: Parameter first should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:117:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:122: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:122:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:121:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:124:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:127: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:128:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module7\1. MST\Queue.java:129: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 Audit done.
 Starting audit...
