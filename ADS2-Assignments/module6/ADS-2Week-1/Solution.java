@@ -36,29 +36,42 @@ class PageRank {
     public double getPR(final int v) {
         lst = new LinearProbingHashST<Integer, Double>();
         // double pas = 0.0;
-        double prvalue = 0.0;
-        for (int i = 1; i < dg.vertex(); i++) {
-            lst.put(i, 1.0/dg.vertex());
+        double[] prvalue = new double[dg.vertex()];
+        double prval = 0.0;
+        for (int i = 0; i < dg.vertex(); i++) {
+            // lst.put(i, 1.0 / dg.vertex());
+            prvalue[i] = 1.0 / dg.vertex();
         }
+        prvalue = getprarr(prvalue);
+        return prvalue[v];
+    }
+
+    public double[] getprarr(double[] pr) {
+        double val = 0.0;
+        double prvalue = 0.0;
         for (int i = 0; i < 1000; i++) {
+            double[] arr = new double[dg.vertex()];
             for (int j = 0; j < dg.vertex(); j++) {
                 // Iterable<Integer> adjobj = dg.adj(j);
                 // for (int k = 0; k < dg.vertex(); k++) {
-                for(int h : dg.adj(j)) {
+                for(int h : dg.reverse().adj(j)) {
                     if (dg.outdegree(h) == 0) {
-                        prvalue = (double)1 / dg.vertex();
+                        prvalue = (double) 1 / dg.vertex();
                         lst.put(j, prvalue);
-
                         // k++;
                     }
                     else {
-                        prvalue = (double)1 / dg.vertex();
+                        prvalue = (double) 1 / dg.vertex();
                         lst.put(j, prvalue);  
                     }
+                val = val + pr[h] / dg.outdegree(h);
                 }
-            // }
+                pr = arr;
             }
-        }   
+        }
+        return pr;
+    }
+          
         //     // // for (int j = 1; j < v; j++) {
         //     //     if (dg.outdegree(j) == 0) {
 
@@ -78,8 +91,8 @@ class PageRank {
         //         lst.put(i, pas);
         //     }
         // }
-        return prvalue;
-    }
+        // return prvalue;
+    // }
     /**
      * Returns a string representation of the object.
      *
