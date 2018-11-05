@@ -1,3 +1,4 @@
+import java.util.Arrays;
 /**
  * Class for page rank.
  */
@@ -5,7 +6,8 @@ class PageRank {
     /**
      * { var_description }.
      */
-    LinearProbingHashST<Integer, Double> lst;
+    private double[] prvalue;
+    // LinearProbingHashST<Integer, Double> lst;
     /**
      * vertices count.
      */
@@ -34,65 +36,47 @@ class PageRank {
      * @return     The pr.
      */
     public double getPR(final int v) {
-        lst = new LinearProbingHashST<Integer, Double>();
+        // lst = new LinearProbingHashST<Integer, Double>();
         // double pas = 0.0;
-        double[] prvalue = new double[dg.vertex()];
+        prvalue = new double[dg.vertex()];
         double prval = 0.0;
         for (int i = 0; i < dg.vertex(); i++) {
             // lst.put(i, 1.0 / dg.vertex());
-            prvalue[i] = 1.0 / dg.vertex();
+            prvalue[i] = 1.0 / (double)dg.vertex();
         }
+        
+        // System.out.println(Arrays.toString(prvalue));
         prvalue = getprarr(prvalue);
         return prvalue[v];
     }
 
     public double[] getprarr(double[] pr) {
-        double val = 0.0;
-        double prvalue = 0.0;
+        // double prvalue = 0.0;
         for (int i = 0; i < 1000; i++) {
             double[] arr = new double[dg.vertex()];
             for (int j = 0; j < dg.vertex(); j++) {
+            double val = 0.0;
+
                 // Iterable<Integer> adjobj = dg.adj(j);
                 // for (int k = 0; k < dg.vertex(); k++) {
                 for(int h : dg.reverse().adj(j)) {
-                    if (dg.outdegree(h) == 0) {
-                        prvalue = (double) 1 / dg.vertex();
-                        lst.put(j, prvalue);
-                        // k++;
-                    }
-                    else {
-                        prvalue = (double) 1 / dg.vertex();
-                        lst.put(j, prvalue);  
-                    }
+                    // if (dg.outdegree(h) == 0) {
+                    //     prvalue = (double) 1 / dg.vertex();
+                    //     lst.put(j, prvalue);
+                    //     // k++;
+                    // }
+                    // else {
+                    //     prvalue = (double) 1 / dg.vertex();
+                    //     lst.put(j, prvalue);  
+                    // }
                 val = val + pr[h] / dg.outdegree(h);
                 }
-                pr = arr;
+            arr[j] = val;    
             }
+            pr = arr;
         }
         return pr;
     }
-          
-        //     // // for (int j = 1; j < v; j++) {
-        //     //     if (dg.outdegree(j) == 0) {
-
-        //     //     }
-        //     //     
-        //     //     for (int k : adj) {
-        //     //         k++;
-        //     //     }
-        //     // }
-        // }
-        // for (int i = 0; i < dg.vertex(); i++) {
-        //     if (dg.outdegree(i) == 0) {
-        //         pas = (double) 1 / dg.vertex();
-        //         lst.put(i, pas);
-        //     } else {
-        //         pas = (double) 1 / dg.vertex();
-        //         lst.put(i, pas);
-        //     }
-        // }
-        // return prvalue;
-    // }
     /**
      * Returns a string representation of the object.
      *
@@ -102,11 +86,12 @@ class PageRank {
         // System.out.println(
             // dg.vertex() + " vertices" + ", " + dg.edge() + " edges");
         // System.out.println();
+        getPR(0);
         String str = "";
         // System.out.println(dg.toString());
         // System.out.println();
         for (int i = 0; i < dg.vertex(); i++) {
-            str = i + " - " + getPR(dg.vertex());
+            str = i + " - " + prvalue[i];
             System.out.println(str);
         }
         // return str;
@@ -191,6 +176,15 @@ public final class Solution {
             System.out.println(wsobj.iAmFeelingLucky(searchword));
         }
         System.out.println(dg.toString());
+        for (int i = 0; i < dg.vertex(); i++) {
+            if (dg.outdegree(i) == 0) {
+                for (int j = 0; j < dg.vertex(); j++) {
+                    if (i != j) {
+                        dg.addEdge(i, j);
+                    }
+                }
+            }
+        }
         pg.display();
         // System.out.println("\n");
         // read the search queries from std in
