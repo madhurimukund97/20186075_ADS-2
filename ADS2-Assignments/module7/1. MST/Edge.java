@@ -16,14 +16,14 @@ public class Edge implements Comparable<Edge> {
     private final double weight;
     /**
      *constructor.
-     * @param      v  integer
-     * @param      w  integer
-     * @param      weight  The weight
+     * @param      v1  integer
+     * @param      w1  integer
+     * @param      weight1  The weight
      */
-    public Edge(final int v, final int w, final double weight) {
-        this.v = v;
-        this.w = w;
-        this.weight = weight;
+    public Edge(final int v1, final int w1, final double weight1) {
+        this.v = v1;
+        this.w = w1;
+        this.weight = weight1;
     }
     /**
      *weight method.
@@ -40,7 +40,7 @@ public class Edge implements Comparable<Edge> {
         return v;
     }
     /**
-     *next vertex
+     *next vertex.
      * @param      vertex  The vertex
      *
      * @return other vertex.
