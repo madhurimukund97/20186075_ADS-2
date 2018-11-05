@@ -36,7 +36,7 @@ public class EdgeWeightedGraph {
      *
      * @return vertex count
      */
-    public int ver() {
+    public int vertex() {
         return ver;
     }
     /**
@@ -44,7 +44,7 @@ public class EdgeWeightedGraph {
      *
      * @return edge count
      */
-    public int edg() {
+    public int edge() {
         return edg;
     }
     /**
