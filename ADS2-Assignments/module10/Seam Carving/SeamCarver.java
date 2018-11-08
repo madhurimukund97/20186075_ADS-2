@@ -69,26 +69,38 @@ public class SeamCarver {
 		int vert = redv * redv + greenv * greenv + bluev * bluev;
 		double energy = Math.sqrt(hor + vert);
 		return energy;
-
-
 	}
-
-	// sequence of indices for horizontal seam
+	/**
+	 * sequence of indices for horizontal seam.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int[] findHorizontalSeam() {
 		return new int[0];
 	}
-
-	// sequence of indices for vertical seam
+	/**
+	 * sequence of indices for vertical seam.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int[] findVerticalSeam() {
 		return new int[0];
 	}
-
-	// remove horizontal seam from current picture
+	/**
+	 * Removes a horizontal seam.
+	 * remove horizontal seam from current picture.
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeHorizontalSeam(int[] seam) {
 
 	}
-
-	// remove vertical seam from current picture
+	/**
+	 * Removes a vertical seam.
+	 * remove vertical seam from current picture.
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeVerticalSeam(int[] seam) {
 
 	}
