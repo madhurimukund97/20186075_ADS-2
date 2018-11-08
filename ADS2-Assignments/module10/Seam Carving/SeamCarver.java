@@ -52,6 +52,9 @@ public class SeamCarver {
 	 * @return     { description_of_the_return_value }
 	 */
 	public double energy(int x, int y) {
+		if (x == 0 || y == 0 || pict.width() - 1 == x || pict.height() - 1 == y) {
+			return 1000;
+		}
 		Color left = pict.get(x, y - 1);
 		Color right = pict.get(x, y + 1);
 		Color top = pict.get(x - 1, y);
