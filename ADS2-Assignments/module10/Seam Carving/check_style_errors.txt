@@ -223,17 +223,9 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:9:17: Variable 'pict' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:16:27: Parameter picture should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:54:30: Parameter x should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:54:37: Parameter y should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:55: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:56:32: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:95:42: Parameter seam should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:104:40: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:56:55: '||' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
