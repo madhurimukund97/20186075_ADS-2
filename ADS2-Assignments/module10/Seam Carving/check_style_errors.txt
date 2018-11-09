@@ -230,12 +230,10 @@ Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:28: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:48:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:48:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:49:36: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:49:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:50:31: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]
