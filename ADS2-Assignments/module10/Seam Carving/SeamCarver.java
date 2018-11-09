@@ -86,6 +86,11 @@ public class SeamCarver {
      * @return     { description_of_the_return_value }
      */
     public int[] findVerticalSeam() {
+        for (int i = 0; i < height(); i++) {
+            for (int j = 0; j < width(); j++) {
+                // if ()
+            }
+        }
         return new int[0];
     }
     /**
@@ -104,6 +109,6 @@ public class SeamCarver {
      * @param      seam  The seam
      */
     public void removeVerticalSeam(final int[] seam) {
-        
+
     }
 }
