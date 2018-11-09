@@ -229,27 +229,17 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:6:38: Parameter fileName should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:8: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:15: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:21: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:21:34: Parameter carver should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:21:53: Parameter seam should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:21:65: Parameter direction should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:28:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:28:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:84: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:12:38: Parameter fileName should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:22: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:34:34: Parameter carver should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:34:53: Parameter seam should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:35:9: Parameter direction should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:42:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:42:61: '||' should be on a new line. [OperatorWrap]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:43:36: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]
