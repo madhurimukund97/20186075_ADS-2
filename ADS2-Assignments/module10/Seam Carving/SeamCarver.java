@@ -53,8 +53,8 @@ public class SeamCarver {
      */
     public double energy(final int x, final int y) {
         final int thousand = 1000;
-        if (x == 0 || y == 0 || pict.width() - 1 == x ||
-            pict.height() - 1 == y) {
+        if (x == 0 || y == 0 || pict.width() - 1 == x
+            || pict.height() - 1 == y) {
             return thousand;
         }
         Color left = pict.get(x, y - 1);
@@ -104,6 +104,6 @@ public class SeamCarver {
      * @param      seam  The seam
      */
     public void removeVerticalSeam(final int[] seam) {
-
+        
     }
 }
