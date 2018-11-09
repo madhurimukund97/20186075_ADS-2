@@ -200,22 +200,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:6: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:15: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:17:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:17:44: Parameter sc should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:25:42: Parameter sc should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:32:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:32:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:34: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ShowSeams.java:37: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 13 errors.
-Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:49:32: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:50:31: Expression can be simplified. [SimplifyBooleanExpression]
