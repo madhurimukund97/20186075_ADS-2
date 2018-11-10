@@ -1,0 +1,23 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Edge.java:67:5: Class 'Edge' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Edge' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Edge.java:67:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\EdgeWeightedGraph.java:107:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\EdgeWeightedGraph.java:107:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\EdgeWeightedGraph.java:109:53: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\EdgeWeightedGraph.java:109:54: '+' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 4 errors.
+Starting audit...
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:49: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:50: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 6 errors.
