@@ -68,7 +68,7 @@ public final class Solution {
             DijkstraUndirectedSP obj1 = new DijkstraUndirectedSP(edg, src1);
             if (obj1.hasPathTo(dest1)) {
                 System.out.println(obj1.distTo(dest1));
-                // System.out.println();
+                System.out.println(path);
             } else {
                 System.out.println("No Path Found.");
             }
