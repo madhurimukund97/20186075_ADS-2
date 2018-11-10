@@ -63,14 +63,15 @@ public final class Solution {
             // Other wise print "No Path Found."
             String[] line1 = s.nextLine().split(" ");
             int src1 = Integer.parseInt(line1[0]);
-            int dest1 = Integer.parseInt(line1[1]);
+            int path = Integer.parseInt(line1[1]);
+            int dest1 = Integer.parseInt(line1[2]);
             DijkstraUndirectedSP obj1 = new DijkstraUndirectedSP(edg, src1);
-            // if (obj1.hasPathTo(dest1)) {
-                // System.out.println(obj1.distTo(dest1));
+            if (obj1.hasPathTo(dest1)) {
+                System.out.println(obj1.distTo(dest1));
                 // System.out.println();
-            // } else {
+            } else {
                 System.out.println("No Path Found.");
-            // }
+            }
             // System.out.println();
             break;
         default:
