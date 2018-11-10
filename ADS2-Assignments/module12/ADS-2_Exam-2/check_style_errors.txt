@@ -122,6 +122,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:49: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:50:27: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:65: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module12\ADS-2_Exam-2\Solution.java:66: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 6 errors.
