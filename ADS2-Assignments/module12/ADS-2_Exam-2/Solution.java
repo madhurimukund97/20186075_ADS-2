@@ -38,21 +38,31 @@ public final class Solution {
 			break;
 
 		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
+			// Handle the case of DirectedPaths,
+			// where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] line = s.nextLine().split(" ");
+			int src = Integer.parseInt(line[0]);
+			int dest = Integer.parseInt(line[1]);
+			DijkstraUndirectedSP obj = new DijkstraUndirectedSP(edg, src);
+			if(obj.hasPathTo(dest)) {
+				System.out.println(obj.distTo(dest));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
-			
-
 		case "ViaPaths":
-			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
+			// Handle the case of ViaPaths,
+			// where three integers are given.
+			// First is the source and
+			// second is the via is the one where path should pass throuh.
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			break;
-
+			
 		default:
 			break;
 		}
