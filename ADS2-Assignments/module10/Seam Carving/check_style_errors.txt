@@ -196,9 +196,14 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:90:47: Must have at least one statement. [EmptyBlock]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:87: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:227: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:280:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:288: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:288:50: '||' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:49:32: Expression can be simplified. [SimplifyBooleanExpression]
