@@ -6,11 +6,24 @@
  *
  *  Read image from file specified as command line argument. Print energy
  *  of each pixel as calculated by SeamCarver object.
- * 
+ *
  ******************************************************************************/
+/**
+ * Class for print energy.
+ */
 public class PrintEnergy {
-
-    public static void main(String[] args) {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // constructor not used.
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf(
             "image is %d pixels wide by %d pixels high.\n",
