@@ -85,19 +85,12 @@ Audit done.
 Checkstyle ends with 82 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:8: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:9: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:13:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:13:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:15: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:16: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintEnergy.java:22: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]
@@ -196,12 +189,8 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:87: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:227: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:297: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
