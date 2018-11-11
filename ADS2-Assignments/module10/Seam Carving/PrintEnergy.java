@@ -38,7 +38,3 @@ public final class PrintEnergy {
         }
     }
 }
-
-
-
-
