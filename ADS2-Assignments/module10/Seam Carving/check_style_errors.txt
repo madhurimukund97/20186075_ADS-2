@@ -125,17 +125,12 @@ Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:17: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:17:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:18:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:19:28: '3' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:21: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:27: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:46: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:52: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:32:28: '3' is a magic number. [MagicNumber]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:34: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:39: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\ResizeDemo.java:53: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SCUtility.java:15: Missing a Javadoc comment. [JavadocType]
