@@ -199,11 +199,9 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:87: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:227: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:280:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:288: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:288:50: '||' should be on a new line. [OperatorWrap]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\SeamCarver.java:297: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
