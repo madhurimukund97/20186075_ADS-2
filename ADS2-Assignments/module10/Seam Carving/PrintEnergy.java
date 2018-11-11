@@ -11,7 +11,7 @@
 /**
  * Class for print energy.
  */
-public class PrintEnergy {
+public final class PrintEnergy {
     /**
      * Constructs the object.
      */
