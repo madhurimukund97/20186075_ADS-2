@@ -20,9 +20,9 @@ public final class StdOut {
     private static PrintWriter out;
     static {
         try {
-            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
-        }
-        catch (UnsupportedEncodingException e) {
+            out = new PrintWriter(
+                new OutputStreamWriter(System.out, CHARSET_NAME), true);
+        } catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
     }
