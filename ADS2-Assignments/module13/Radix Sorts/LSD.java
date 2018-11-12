@@ -78,21 +78,21 @@ public class LSD {
     }
 
    
-    // /**
-    //  * Returns a string representation of the object.
-    //  *
-    //  * @return     String representation of the object.
-    //  */
-    // public void toString(String[] a) {
-    //     StringBuilder sb = new StringBuilder();
-    //     sb.append("[");
-    //     int i;
-    //     for (i = 0; i < a.length - 1; i++) {
-    //         sb.append(a[i] + ", ");
-    //     }
-    //     sb.append(a[i] + "]");
-    //     System.out.println(sb.toString());
-    // }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public void toString(String[] a) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        int i;
+        for (i = 0; i < a.length - 1; i++) {
+            sb.append(a[i] + ", ");
+        }
+        sb.append(a[i] + "]");
+        System.out.println(sb.toString());
+    }
 
     // /**
     //  * Reads in a sequence of fixed-length strings from standard input;

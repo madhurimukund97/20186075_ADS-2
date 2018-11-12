@@ -3,7 +3,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:9: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:11: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:32: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:41:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:42:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:45:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:47: Line has trailing spaces. [RegexpSingleline]
@@ -22,8 +21,11 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:71: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:75: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:80: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:84: Unused Javadoc tag. [JavadocMethod]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:86:26: Parameter a should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:86:35: Expected @param tag for 'a'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\MSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\MSD.java:4: Line has trailing spaces. [RegexpSingleline]
