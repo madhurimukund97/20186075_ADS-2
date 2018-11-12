@@ -23,8 +23,7 @@ public final class Solution {
 		for (int i = 0; i < lines; i++) {
 			arr[i] = s.nextLine();
 		}
-		int n = arr.length;
-		lsdobj.sort(arr, n);
+		lsdobj.sort(arr, arr[0].length());
 		// lsdobj.toString(arr);
 		System.out.println(Arrays.toString(arr));
 	}
