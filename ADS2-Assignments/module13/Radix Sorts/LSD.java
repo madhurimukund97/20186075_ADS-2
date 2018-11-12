@@ -18,17 +18,18 @@ public class LSD {
      * @param      a     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public static void sort(String[] a, int w) {
+    public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int R = 256;   // extend ASCII alphabet size
+        final int two = 256;
+        int rad = two;   // extend ASCII alphabet size.
         String[] aux = new String[n];
-        for (int d = w-1; d >= 0; d--) {
-            int[] count = new int[R+1];
+        for (int d = w - 1; d >= 0; d--) {
+            int[] count = new int[rad + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
-            for (int r = 0; r < R; r++) {
-                count[r+1] += count[r];
+            for (int r = 0; r < rad; r++) {
+                count[r + 1] += count[r];
             }
             for (int i = 0; i < n; i++) {
                 aux[count[a[i].charAt(d)]++] = a[i];
@@ -43,7 +44,7 @@ public class LSD {
      *
      * @param      a     { parameter_description }
      */
-    public void toString(String[] a) {
+    public void toString(final String[] a) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         int i;

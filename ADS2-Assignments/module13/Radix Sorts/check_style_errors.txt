@@ -1,19 +1,6 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:21:29: Parameter a should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:21:41: Parameter w should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:23:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:23:17: '256' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:25:23: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:25:24: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:26:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:26:37: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:31:24: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:31:25: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\LSD.java:46:26: Parameter a should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\Solution.java:18:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module13\Radix Sorts\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
