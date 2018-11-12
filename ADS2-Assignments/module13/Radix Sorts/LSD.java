@@ -83,7 +83,7 @@ public class LSD {
      *
      * @param a the array to be sorted
      */
-    public static void sort(String[] a) {
+    public static void sort(int[] a) {
         final int BITS = 32;                 // each int is 32 bits 
         final int R = 1 << BITS_PER_BYTE;    // each bytes is between 0 and 255
         final int MASK = R - 1;              // 0xFF
@@ -126,14 +126,29 @@ public class LSD {
                 a[i] = aux[i];
         }
     }
-
     /**
-     * Reads in a sequence of fixed-length strings from standard input;
-     * LSD radix sorts them;
-     * and prints them to standard output in ascending order.
+     * Returns a string representation of the object.
      *
-     * @param args the command-line arguments
+     * @return     String representation of the object.
      */
+    public void toString(int[] a) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        int i;
+        for (i = 0; i < a.length - 1; i++) {
+            sb.append(a[i] + ", ");
+        }
+        sb.append(a[i] + "]");
+        System.out.println(sb.toString());
+    }
+
+    // /**
+    //  * Reads in a sequence of fixed-length strings from standard input;
+    //  * LSD radix sorts them;
+    //  * and prints them to standard output in ascending order.
+    //  *
+    //  * @param args the command-line arguments
+    //  */
     // public static void main(String[] args) {
     //     String[] a = StdIn.readAllStrings();
     //     int n = a.length;
