@@ -23,6 +23,6 @@ public final class Solution {
 			arr[i] = s.nextLine();
 		}
 		msdobj.sort(arr);
-		System.out.println(msdobj);
+		System.out.println(arr);
 	}
 }
