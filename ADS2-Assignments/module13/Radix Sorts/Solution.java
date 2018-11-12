@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Solution class.
  */
@@ -24,6 +25,7 @@ public final class Solution {
 		}
 		int n = arr.length;
 		lsdobj.sort(arr, n);
-		lsdobj.toString(arr);
+		// lsdobj.toString(arr);
+		System.out.println(Arrays.toString(arr));
 	}
 }

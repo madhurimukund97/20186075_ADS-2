@@ -7,7 +7,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -19,7 +19,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -31,7 +31,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -43,7 +43,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,7 +55,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -67,7 +67,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -79,7 +79,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String ind
 	at java.base/java.lang.StringLatin1.charAt(Unknown Source)
 	at java.base/java.lang.String.charAt(Unknown Source)
 	at LSD.sort(LSD.java:64)
-	at Solution.main(Solution.java:26)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 7: Passed ##########
