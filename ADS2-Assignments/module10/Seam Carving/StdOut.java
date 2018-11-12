@@ -117,7 +117,7 @@ public final class StdOut {
         out.println(x);
     }
 
-   /**
+    /**
      * Prints a byte to standard output and then terminates the line.
      * <p>
      * To write binary data, see {@link BinaryStdOut}.
@@ -128,16 +128,16 @@ public final class StdOut {
         out.println(x);
     }
 
-   /**
+    /**
      * Flushes standard output.
      */
     public static void print() {
         out.flush();
     }
 
-   /**
+    /**
      * Prints an object to standard output and flushes standard output.
-     * 
+     *
      * @param x the object to print
      */
     public static void print(final Object x) {
@@ -145,9 +145,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a boolean to standard output and flushes standard output.
-     * 
+     *
      * @param x the boolean to print
      */
     public static void print(final boolean x) {
@@ -155,9 +155,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a character to standard output and flushes standard output.
-     * 
+     *
      * @param x the character to print
      */
     public static void print(final char x) {
@@ -165,9 +165,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a double to standard output and flushes standard output.
-     * 
+     *
      * @param x the double to print
      */
     public static void print(final double x) {
@@ -175,9 +175,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a float to standard output and flushes standard output.
-     * 
+     *
      * @param x the float to print
      */
     public static void print(final float x) {
@@ -185,9 +185,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints an integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the integer to print
      */
     public static void print(final int x) {
@@ -195,9 +195,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a long integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the long integer to print
      */
     public static void print(final long x) {
@@ -205,9 +205,9 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a short integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the short integer to print
      */
     public static void print(final short x) {
@@ -215,7 +215,7 @@ public final class StdOut {
         out.flush();
     }
 
-   /**
+    /**
      * Prints a byte to standard output and flushes standard output.
      *
      * @param x the byte to print
