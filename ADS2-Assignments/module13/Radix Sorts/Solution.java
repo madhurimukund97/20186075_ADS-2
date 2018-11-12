@@ -16,13 +16,14 @@ public final class Solution {
 	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		int lines = s.nextInt();
-		int[] arr = new int[lines];
+		int lines = Integer.parseInt(s.nextLine());
+		String[] arr = new String[lines];
 		LSD lsdobj = new LSD();
 		for (int i = 0; i < lines; i++) {
-			arr[i] = s.nextInt();
+			arr[i] = s.nextLine();
 		}
-		lsdobj.sort(arr);
+		int n = arr.length;
+		lsdobj.sort(arr, n);
 		lsdobj.toString(arr);
 	}
 }

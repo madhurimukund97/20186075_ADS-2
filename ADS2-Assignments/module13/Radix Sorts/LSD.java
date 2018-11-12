@@ -131,7 +131,7 @@ public class LSD {
      *
      * @return     String representation of the object.
      */
-    public void toString(int[] a) {
+    public void toString(String[] a) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         int i;
