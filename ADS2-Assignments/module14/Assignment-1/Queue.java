@@ -146,11 +146,11 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * { var_description }.      
+         * { var_description }.
          */
         private Node<Item> current;
         /**
-         * Constructs the object.      
+         * Constructs the object.
          *
          * @param      firstt The first
          */

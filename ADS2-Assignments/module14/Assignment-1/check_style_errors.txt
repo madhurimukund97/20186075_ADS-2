@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\Queue.java:149: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\Queue.java:153: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
