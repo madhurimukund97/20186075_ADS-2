@@ -1,13 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:53:29: Parameter key should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:55: Line is longer than 80 characters (found 81). [LineLength]
