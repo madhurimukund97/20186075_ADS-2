@@ -59,21 +59,24 @@ public class TST<Value> {
     }
 
     /**
-     * Returns the value associated with the given key.
-     * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * { function_description }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
     public Value get(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException(
+                "calls get() with null argument");
         }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
         }
         Node<Value> x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return x.val;
     }
     /**
@@ -100,7 +103,7 @@ public class TST<Value> {
         } else if (c > x.c) {
             return get(x.right, key, d);
         } else if (d < key.length() - 1) {
-            return get(x.mid,   key, d+1);
+            return get(x.mid, key, d + 1);
         } else {
             return x;
         }
@@ -145,7 +148,7 @@ public class TST<Value> {
         } else if (c > x1.c) {
             x1.right = put(x1.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x1.mid   = put(x1.mid,   key, val, d+1);
+            x1.mid   = put(x1.mid, key, val, d + 1);
         } else {
             x1.val   = val;
         }
@@ -176,8 +179,7 @@ public class TST<Value> {
                 x = x.left;
             } else if (c > x.c) {
                 x = x.right;
-            }
-            else {
+            } else {
                 i++;
                 if (x.val != null) {
                     length = i;
