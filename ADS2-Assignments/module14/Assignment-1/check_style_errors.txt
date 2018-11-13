@@ -12,15 +12,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:103:40: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:148:49: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:148:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:167: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:173: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:174: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:177: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:207: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:208: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:221: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:223: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:265:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:265:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:179:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 8 errors.

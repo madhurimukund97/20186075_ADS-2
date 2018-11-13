@@ -164,17 +164,24 @@ public class TST<Value> {
             throw new IllegalArgumentException(
                 "calls longestPrefixOf() with null argument");
         }
-        if (query.length() == 0) return null;
+        if (query.length() == 0) {
+            return null;
+        }
         int length = 0;
         Node<Value> x = root;
         int i = 0;
         while (x != null && i < query.length()) {
             char c = query.charAt(i);
-            if      (c < x.c) x = x.left;
-            else if (c > x.c) x = x.right;
+            if (c < x.c) {
+                x = x.left;
+            } else if (c > x.c) {
+                x = x.right;
+            }
             else {
                 i++;
-                if (x.val != null) length = i;
+                if (x.val != null) {
+                    length = i;
+                }
                 x = x.mid;
             }
         }
@@ -204,8 +211,12 @@ public class TST<Value> {
         }
         Queue<String> queue = new Queue<String>();
         Node<Value> x = get(root, prefix, 0);
-        if (x == null) return queue;
-        if (x.val != null) queue.enqueue(prefix);
+        if (x == null) {
+            return queue;
+        }
+        if (x.val != null) {
+            queue.enqueue(prefix);
+        }
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
@@ -218,9 +229,13 @@ public class TST<Value> {
      */
     private void collect(final Node<Value> x,
         final StringBuilder prefix, final Queue<String> queue) {
-        if (x == null) return;
+        if (x == null) {
+            return;
+        }
         collect(x.left,  prefix, queue);
-        if (x.val != null) queue.enqueue(prefix.toString() + x.c);
+        if (x.val != null) {
+            queue.enqueue(prefix.toString() + x.c);
+        }
         collect(x.mid,   prefix.append(x.c), queue);
         prefix.deleteCharAt(prefix.length() - 1);
         collect(x.right, prefix, queue);
@@ -262,7 +277,7 @@ public class TST<Value> {
                 prefix.toString() + x.c);
             }
             if (i < pattern.length() - 1) {
-                collect(x.mid, prefix.append(x.c), i+1, pattern, queue);
+                collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }
