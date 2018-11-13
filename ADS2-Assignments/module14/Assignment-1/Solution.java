@@ -1,7 +1,20 @@
 import java.util.Scanner;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor not used.
+	}
+	/**
+	 * Client program.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
 		String[] words = loadWords();
 		TST<Integer> tstobj = new TST<Integer>();
@@ -16,7 +29,6 @@ public class Solution {
         for(String word : tstobj.keysWithPrefix(prefix))
             System.out.println(word);
 	}
-
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
