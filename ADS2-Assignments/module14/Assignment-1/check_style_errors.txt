@@ -20,11 +20,7 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:208: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:221: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:223: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:251: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:253: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:256: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:259:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:259:54: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:263: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:265:53: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module14\Assignment-1\TST.java:265:54: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 17 errors.
