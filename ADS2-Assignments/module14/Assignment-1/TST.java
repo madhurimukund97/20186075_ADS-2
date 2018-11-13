@@ -1,19 +1,41 @@
+/**
+ * Class for tst.
+ *
+ * @param      <Value>  The value
+ */
 public class TST<Value> {
-    private int n;              // size
-    private Node<Value> root;   // root of TST
-
+    /**
+     * number.
+     */
+    private int n;
+    /**
+     * root of TST.
+     */
+    private Node<Value> root;
+    /**
+     * Class for node.
+     *
+     * @param      <Value>  The value
+     */
     private static class Node<Value> {
-        private char c;                        // character
-        private Node<Value> left, mid, right;  // left, middle, and right subtries
-        private Value val;                     // value associated with string
+        /**
+         * character.
+         */
+        private char c;
+        /**
+         * left, middle, and right subtries.
+         */
+        private Node<Value> left, mid, right;
+        /**
+         * value associated with string.
+         */
+        private Value val;
     }
-
     /**
      * Initializes an empty string symbol table.
      */
     public TST() {
     }
-
     /**
      * Returns the number of key-value pairs in this symbol table.
      * @return the number of key-value pairs in this symbol table
@@ -21,13 +43,12 @@ public class TST<Value> {
     public int size() {
         return n;
     }
-
     /**
-     * Does this symbol table contain the given key?
-     * @param key the key
-     * @return {@code true} if this symbol table contains {@code key} and
-     *     {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * contains.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean contains(String key) {
         if (key == null) {
