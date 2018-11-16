@@ -7,7 +7,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -20,7 +20,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -33,7 +33,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -46,7 +46,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -59,7 +59,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -72,7 +72,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -85,7 +85,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -98,7 +98,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -111,7 +111,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -124,7 +124,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -137,7 +137,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -150,7 +150,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -163,7 +163,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -176,7 +176,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -189,7 +189,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -202,7 +202,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -215,7 +215,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -228,7 +228,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -241,7 +241,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -254,7 +254,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -267,7 +267,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -280,7 +280,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -293,7 +293,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -306,7 +306,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -319,7 +319,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -332,7 +332,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -345,7 +345,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -358,7 +358,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 
@@ -371,7 +371,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at TrieST$Node.access$100(TrieST.java:22)
 	at TrieST.put(TrieST.java:130)
 	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:23)
+	at BoggleSolver.<init>(BoggleSolver.java:38)
 	at Solution.main(Solution.java:24)
 ----------------------------------------
 

@@ -1,30 +1,28 @@
-/******************************************************************************
- *  Compilation:  javac BoggleBoard.java
- *  Execution:    java  BoggleBoard
- *  Dependencies: StdRandom.java In.java StdOut.java
- *
- *  A data type for Boggle boards.
- *
- ******************************************************************************/
-
+/**
+ * Class for boggle board.
+ */
 public class BoggleBoard {
-    // the 16 Boggle dice (1992 version)
+    /**
+     * the 16 Boggle dice (1992 version).
+     */
     private static final String[] BOGGLE_1992 = {
         "LRYTTE", "VTHRWE", "EGHWNE", "SEOTIS",
         "ANAEEG", "IDSYTT", "OATTOW", "MTOICU",
         "AFPKFS", "XLDERI", "HCPOAS", "ENSIEU",
         "YLDEVR", "ZNRNHL", "NMIQHU", "OBBAOJ"
     };
-
-    // the 16 Boggle dice (1983 version)
+    /**
+     * the 16 Boggle dice (1983 version).
+     */
     private static final String[] BOGGLE_1983 = {
         "AACIOT", "ABILTY", "ABJMOQ", "ACDEMP",
         "ACELRS", "ADENVZ", "AHMORS", "BIFORX",
         "DENOSW", "DKNOTU", "EEFHIY", "EGINTV",
         "EGKLUY", "EHINPS", "ELPSTU", "GILRUW",
     };
-
-    // the 25 Boggle Master / Boggle Deluxe dice
+    /**
+     * the 25 Boggle Master / Boggle Deluxe dice.
+     */
     private static final String[] BOGGLE_MASTER = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCNSTW",
@@ -32,8 +30,9 @@ public class BoggleBoard {
         "DHHNOT", "DHLNOR", "EIIITT", "EMOTTT", "ENSSSU",
         "FIPRSY", "GORRVW", "HIPRRY", "NOOTUW", "OOOTTU"
     };
-
-    // the 25 Big Boggle dice
+    /**
+     * the 25 Big Boggle dice.
+     */
     private static final String[] BOGGLE_BIG = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCENST",
@@ -41,10 +40,14 @@ public class BoggleBoard {
         "DHLNOR", "DHLNOR", "EIIITT", "EMOTTT", "ENSSSU",
         "FIPRSY", "GORRVW", "IPRRRY", "NOOTUW", "OOOTTU"
     };
-
-
-    // letters and frequencies of letters in the English alphabet
-    private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * letters and frequencies of letters in the English alphabet.
+     */
+    private static final String ALPHABET =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * frequency.
+     */
     private static final double[] FREQUENCIES = {
         0.08167, 0.01492, 0.02782, 0.04253, 0.12703, 0.02228,
         0.02015, 0.06094, 0.06966, 0.00153, 0.00772, 0.04025,
@@ -82,8 +85,10 @@ public class BoggleBoard {
         In in = new In(filename);
         m = in.readInt();
         n = in.readInt();
-        if (m <= 0) throw new IllegalArgumentException("number of rows must be a positive integer");
-        if (n <= 0) throw new IllegalArgumentException("number of columns must be a positive integer");
+        if (m <= 0) throw new IllegalArgumentException(
+            "number of rows must be a positive integer");
+        if (n <= 0) throw new IllegalArgumentException(
+            "number of columns must be a positive integer");
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -91,9 +96,11 @@ public class BoggleBoard {
                 if (letter.equals("QU"))
                     board[i][j] = 'Q';
                 else if (letter.length() != 1)
-                    throw new IllegalArgumentException("invalid character: " + letter);
+                    throw new IllegalArgumentException(
+                        "invalid character: " + letter);
                 else if (!ALPHABET.contains(letter))
-                    throw new IllegalArgumentException("invalid character: " + letter);
+                    throw new IllegalArgumentException(
+                        "invalid character: " + letter);
                 else 
                     board[i][j] = letter.charAt(0);
             }

@@ -139,6 +139,17 @@ public class TrieST<Value> {
         return n;
     }
     /**
+     * Determines if it has prefix.
+     *
+     * @param      key   The key
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    public boolean hasPrefix(String key) {
+        Node node = get(root, key, 0);
+        return node != null;
+    }
+    /**
      * Determines if empty.
      *
      * @return     True if empty, False otherwise.
