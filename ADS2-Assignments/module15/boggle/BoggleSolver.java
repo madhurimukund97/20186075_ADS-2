@@ -139,17 +139,6 @@ public class BoggleSolver {
         return (row >= 0 && col >= 0
            && row < board.rows() && col < board.cols());
     }
-    // Returns the score of the given word
-    // if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains
-    // only the uppercase letters A through Z.)
-    /**
-     * score of word.
-     *
-     * @param      word  The word
-     *
-     * @return  score.
-     */
 	/**
 	 * Score.
 	 *
@@ -163,8 +152,7 @@ public class BoggleSolver {
         }
 		if (trieobj.contains(word)) {
 			return trieobj.get(word);
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 }
