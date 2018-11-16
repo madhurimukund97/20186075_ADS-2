@@ -4,15 +4,15 @@ import java.util.TreeSet;
  * Class for boggle solver.
  */
 public class BoggleSolver {
-	// Initializes the data structure using the given array of strings
-	// as the dictionary.
-	// (You can assume each word in the dictionary contains
-	// only the uppercase letters A through Z.).
-	/**
-	 * TrieST object.
-	*/
-	private TrieST<Integer> trieobj;
-	/**
+    // Initializes the data structure using the given array of strings
+    // as the dictionary.
+    // (You can assume each word in the dictionary contains
+    // only the uppercase letters A through Z.).
+    /**
+     * TrieST object.
+    */
+    private TrieST<Integer> trieobj;
+    /**
      * set of valid words.
      */
     private Set<String> vwords;
@@ -20,36 +20,38 @@ public class BoggleSolver {
      * visited character.
      */
     private boolean[][] markedarr;
-	/**
-	 * constructor.
-	*/
-	public BoggleSolver(String[] dictionary) {
-		trieobj = new TrieST<Integer>();
-		vwords = new TreeSet<String>();
-        int th = 3;
-        int f = 5;
-        int e = 8;
-        int ele = 11;
-		int[] points = {0, 0, 0, 1, 1, 2, th, f, ele};
-		for (String word : dictionary) {
-			if (word.length() >= e) {
-				trieobj.put(word, ele);
-			} else {
-				trieobj.put(word, points[word.length()]);
-			}
-		}
-	}
-	/**
-	 * Gets all valid words.
-	 * Returns the set of all valid words
-	 * in the given Boggle board, as an Iterable.
-	 *
-	 * @param      board  The board
-	 *
-	 * @return     All valid words.
-	 */
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		if (board == null) {
+    /**
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
+        trieobj = new TrieST<Integer>();
+        vwords = new TreeSet<String>();
+        final int th = 3;
+        final int f = 5;
+        final int e = 8;
+        final int ele = 11;
+        int[] points = {0, 0, 0, 1, 1, 2, th, f, ele};
+        for (String word : dictionary) {
+            if (word.length() >= e) {
+                trieobj.put(word, ele);
+            } else {
+                trieobj.put(word, points[word.length()]);
+            }
+        }
+    }
+    /**
+     * Gets all valid words.
+     * Returns the set of all valid words
+     * in the given Boggle board, as an Iterable.
+     *
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
+        if (board == null) {
             throw new IllegalArgumentException("board is null");
         }
         markedarr = new boolean[board.rows()][board.cols()];
@@ -60,8 +62,7 @@ public class BoggleSolver {
             }
         }
         return vwords;
-	}
-	
+    }
     /**
      * dfs implementation to find the words.
      *
@@ -110,8 +111,8 @@ public class BoggleSolver {
     /**
      * Appends a character.
      *
-     * @param      sb String
-     * @param      c  character that to be added for the string.
+     * @param      str String
+     * @param      ch  character that to be added for the string.
      *
      * @return  appended String.
      */
@@ -139,20 +140,20 @@ public class BoggleSolver {
         return (row >= 0 && col >= 0
            && row < board.rows() && col < board.cols());
     }
-	/**
-	 * Score.
-	 *
-	 * @param      word  The word
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int scoreOf(String word) {
+    /**
+     * Score.
+     *
+     * @param      word  The word
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int scoreOf(final String word) {
         if (word == null) {
             return 0;
         }
-		if (trieobj.contains(word)) {
-			return trieobj.get(word);
-		}
-		return 0;
-	}
+        if (trieobj.contains(word)) {
+            return trieobj.get(word);
+        }
+        return 0;
+    }
 }
