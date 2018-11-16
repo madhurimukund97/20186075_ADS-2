@@ -527,10 +527,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:26:29: Parameter dictionary should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:26:38: Expected @param tag for 'dictionary'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:29:18: '3' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:30:17: '5' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:31:17: '8' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:32:19: '11' is a magic number. [MagicNumber]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:51:50: Parameter board should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:64: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:113:8: Unused @param tag for 'sb'. [JavadocMethod]
@@ -538,9 +534,8 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:118:49: Expected @param tag for 'str'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:118:65: Expected @param tag for 'ch'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:160:28: Parameter word should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:168: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
