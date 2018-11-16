@@ -26,10 +26,10 @@ public class BoggleSolver {
 	public BoggleSolver(String[] dictionary) {
 		trieobj = new TrieST<Integer>();
 		vwords = new TreeSet<String>();
-        final int th = 3;
-        final int f = 5;
-        final int e = 8;
-        final int ele = 11;
+        int th = 3;
+        int f = 5;
+        int e = 8;
+        int ele = 11;
 		int[] points = {0, 0, 0, 1, 1, 2, th, f, ele};
 		for (String word : dictionary) {
 			if (word.length() >= e) {
@@ -158,6 +158,9 @@ public class BoggleSolver {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int scoreOf(String word) {
+        if (word == null) {
+            return 0;
+        }
 		if (trieobj.contains(word)) {
 			return trieobj.get(word);
 		} else {
