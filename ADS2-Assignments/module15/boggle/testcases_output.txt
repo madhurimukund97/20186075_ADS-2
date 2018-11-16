@@ -1,131 +1,81 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Score = 33
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 33
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Score = 84
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 84
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Score = 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 1
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Score = 2
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 2
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Score = 3
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 3
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Score = 1000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 1000
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 Score = 400
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 400
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 Score = 7
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 7
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 Score = 155
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 155
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Score = 172
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TrieST$Node.access$100(TrieST.java:22)
-	at TrieST.put(TrieST.java:130)
-	at TrieST.put(TrieST.java:103)
-	at BoggleSolver.<init>(BoggleSolver.java:38)
-	at Solution.main(Solution.java:24)
+Score = 172
 ----------------------------------------
 
 ########## Testcase 10: Passed ##########
