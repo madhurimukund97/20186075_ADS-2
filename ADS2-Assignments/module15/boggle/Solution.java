@@ -23,7 +23,6 @@ public final class Solution {
             String[] dictionary = in.readAllStrings();
             BoggleSolver solver = new BoggleSolver(
                 dictionary);
-
             String boardName = StdIn.readLine();
             BoggleBoard board = new BoggleBoard(
                 "/Files/" + boardName);
@@ -55,5 +54,3 @@ public final class Solution {
         }
     }
 }
-
-
