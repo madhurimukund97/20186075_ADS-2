@@ -11,7 +11,7 @@ class PageRank {
     /**
      * vertices count.
      */
-    private int vertices;
+    // private int vertices;
     /**
      * Digraph object.
      */
@@ -44,34 +44,20 @@ class PageRank {
             // lst.put(i, 1.0 / dg.vertex());
             prvalue[i] = 1.0 / (double)dg.vertex();
         }
-        
         // System.out.println(Arrays.toString(prvalue));
         prvalue = getprarr(prvalue);
         return prvalue[v];
     }
-
     public double[] getprarr(double[] pr) {
         // double prvalue = 0.0;
         for (int i = 0; i < 1000; i++) {
             double[] arr = new double[dg.vertex()];
             for (int j = 0; j < dg.vertex(); j++) {
             double val = 0.0;
-
-                // Iterable<Integer> adjobj = dg.adj(j);
-                // for (int k = 0; k < dg.vertex(); k++) {
                 for(int h : dg.reverse().adj(j)) {
-                    // if (dg.outdegree(h) == 0) {
-                    //     prvalue = (double) 1 / dg.vertex();
-                    //     lst.put(j, prvalue);
-                    //     // k++;
-                    // }
-                    // else {
-                    //     prvalue = (double) 1 / dg.vertex();
-                    //     lst.put(j, prvalue);  
-                    // }
-                val = val + pr[h] / dg.outdegree(h);
+                    val = val + pr[h] / dg.outdegree(h);
                 }
-            arr[j] = val;    
+                arr[j] = val;    
             }
             pr = arr;
         }
