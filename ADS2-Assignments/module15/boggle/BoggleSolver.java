@@ -21,8 +21,10 @@ public class BoggleSolver {
      */
     private boolean[][] markedarr;
     /**
-     * constructor.
-    */
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
     public BoggleSolver(final String[] dictionary) {
         trieobj = new TrieST<Integer>();
         vwords = new TreeSet<String>();
@@ -155,3 +157,4 @@ public class BoggleSolver {
         return 0;
     }
 }
+
