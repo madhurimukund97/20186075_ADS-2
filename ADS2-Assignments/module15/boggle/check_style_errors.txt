@@ -4,56 +4,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:59:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:60:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:61:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:67:13: '4' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:68:13: '4' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:73:47: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:73:48: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:73:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:73:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:79: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:84:24: Parameter filename should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:88: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:90: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:98: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:101: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:104: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:104: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:116:24: Parameter m should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:116:28: 'm' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:116:31: Parameter n should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:116:35: 'n' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:119: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:120: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:135:24: Parameter a should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:137: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:137: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:139: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:139: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:142: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:145: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:146: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:176:27: Parameter i should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:176:34: Parameter j should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:189: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:190: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:200:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:200:38: Expected @param tag for 'args'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:208: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:210:46: '4' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:210:49: '4' is a magic number. [MagicNumber]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:217:14: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:218:14: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:219:14: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:220:14: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleBoard.java:233: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 49 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleGame.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]
@@ -524,18 +476,9 @@ Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:26:29: Parameter dictionary should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:26:38: Expected @param tag for 'dictionary'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:51:50: Parameter board should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:64: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:113:8: Unused @param tag for 'sb'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:114:8: Unused @param tag for 'c'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:118:49: Expected @param tag for 'str'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:118:65: Expected @param tag for 'ch'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:160:28: Parameter word should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module15\boggle\BoggleSolver.java:26:40: Expected @param tag for 'dictionary'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

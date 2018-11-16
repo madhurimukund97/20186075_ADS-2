@@ -43,10 +43,9 @@ public class BoggleBoard {
     /**
      * letters and frequencies of letters in the English alphabet.
      */
-    private static final String ALPHABET =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     /**
-     * frequency.
+     * double array.
      */
     private static final double[] FREQUENCIES = {
         0.08167, 0.01492, 0.02782, 0.04253, 0.12703, 0.02228,
@@ -55,100 +54,116 @@ public class BoggleBoard {
         0.06327, 0.09056, 0.02758, 0.00978, 0.02360, 0.00150,
         0.01974, 0.00074
     };
-
-    private final int m;        // number of rows
-    private final int n;        // number of columns
-    private char[][] board;     // the m-by-n array of characters
-
+    /**
+     * Integer variable.
+     */
+    private final int m;
+    /**
+     * Integer variable.
+     */
+    private final int n;
+    /**
+     * char array.
+     */
+    private char[][] board;
     /**
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
     public BoggleBoard() {
-        m = 4;
-        n = 4;
+        m = 2 * 2;
+        n = 2 * 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                String letters = BOGGLE_1992[n*i+j];
+                String letters = BOGGLE_1992[n * i + j];
                 int r = StdRandom.uniform(letters.length());
                 board[i][j] = letters.charAt(r);
             }
         }
     }
-    
     /**
      * Initializes a board from the given filename.
      * @param filename the name of the file containing the Boggle board
      */
-    public BoggleBoard(String filename) {
+    public BoggleBoard(final String filename) {
         In in = new In(filename);
         m = in.readInt();
         n = in.readInt();
-        if (m <= 0) throw new IllegalArgumentException(
-            "number of rows must be a positive integer");
-        if (n <= 0) throw new IllegalArgumentException(
-            "number of columns must be a positive integer");
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 String letter = in.readString().toUpperCase();
-                if (letter.equals("QU"))
+                if (letter.equals("QU")) {
                     board[i][j] = 'Q';
-                else if (letter.length() != 1)
+                } else if (letter.length() != 1) {
                     throw new IllegalArgumentException(
                         "invalid character: " + letter);
-                else if (!ALPHABET.contains(letter))
+                } else if (!ALPHABET.contains(letter)) {
                     throw new IllegalArgumentException(
                         "invalid character: " + letter);
-                else 
+                } else {
                     board[i][j] = letter.charAt(0);
+                }
             }
         }
     }
-
     /**
      * Initializes a random m-by-n board, according to the frequency
      * of letters in the English language.
-     * @param m the number of rows
-     * @param n the number of columns
+     * @param m1 the number of rows
+     * @param n1 the number of columns
      */
-    public BoggleBoard(int m, int n) {
-        this.m = m;
-        this.n = n;
-        if (m <= 0) throw new IllegalArgumentException("number of rows must be a positive integer");
-        if (n <= 0) throw new IllegalArgumentException("number of columns must be a positive integer");
-        board = new char[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+    public BoggleBoard(final int m1, final int n1) {
+        this.m = m1;
+        this.n = n1;
+        if (m1 <= 0) {
+            throw new IllegalArgumentException(
+                "number of rows must be a positive integer");
+        }
+        if (n1 <= 0) {
+            throw new IllegalArgumentException(
+                "number of columns must be a positive integer");
+        }
+        board = new char[m1][n1];
+        for (int i = 0; i < m1; i++) {
+            for (int j = 0; j < n1; j++) {
                 int r = StdRandom.discrete(FREQUENCIES);
                 board[i][j] = ALPHABET.charAt(r);
             }
         }
     }
-
     /**
      * Initializes a board from the given 2d character array,
      * with 'Q' representing the two-letter sequence "Qu".
      * @param a the 2d character array
      */
-    public BoggleBoard(char[][] a) {
+    public BoggleBoard(final char[][] a) {
         this.m = a.length;
-        if (m == 0) throw new IllegalArgumentException("number of rows must be a positive integer");
+        if (m == 0) {
+            throw new IllegalArgumentException(
+                "number of rows must be a positive integer");
+        }
         this.n = a[0].length;
-        if (n == 0) throw new IllegalArgumentException("number of columns must be a positive integer");
+        if (n == 0) {
+            throw new IllegalArgumentException(
+                "number of columns must be a positive integer");
+        }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
-            if (a[i].length != n)
-                throw new IllegalArgumentException("char[][] array is ragged");
+            if (a[i].length != n) {
+                throw new IllegalArgumentException(
+                    "char[][] array is ragged");
+            }
             for (int j = 0; j < n; j++) {
-                if (ALPHABET.indexOf(a[i][j]) == -1)
-                    throw new IllegalArgumentException("invalid character: " + a[i][j]);
+                if (ALPHABET.indexOf(a[i][j]) == -1) {
+                    throw new IllegalArgumentException(
+                        "invalid character: " + a[i][j]);
+                }
                 board[i][j] = a[i][j];
             }
         }
     }
-
     /**
      * Returns the number of rows.
      * @return number of rows
@@ -156,7 +171,6 @@ public class BoggleBoard {
     public int rows() {
         return m;
     }
-
     /**
      * Returns the number of columns.
      * @return number of columns
@@ -164,7 +178,6 @@ public class BoggleBoard {
     public int cols() {
         return n;
     }
-
     /**
      * Returns the letter in row i and column j,
      * with 'Q' representing the two-letter sequence "Qu".
@@ -173,10 +186,9 @@ public class BoggleBoard {
      * @return the letter in row i and column j
      *    with 'Q' representing the two-letter sequence "Qu".
      */
-    public char getLetter(int i, int j) {
+    public char getLetter(final int i, final int j) {
         return board[i][j];
     }
-
     /**
      * Returns a string representation of the board, replacing 'Q' with "Qu".
      * @return a string representation of the board, replacing 'Q' with "Qu"
@@ -186,49 +198,14 @@ public class BoggleBoard {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 sb.append(board[i][j]);
-                if (board[i][j] == 'Q') sb.append("u ");
-                else sb.append("  ");
+                if (board[i][j] == 'Q') {
+                    sb.append("u ");
+                } else  {
+                    sb.append("  ");
+                }
             }
             sb.append("\n");
         }
         return sb.toString().trim();
     }
-
-    /**
-     * Unit tests the BoggleBoard data type.
-     */
-    public static void main(String[] args) {
-
-        // initialize a 4-by-4 board using Hasbro dice
-        StdOut.println("Hasbro board:");
-        BoggleBoard board1 = new BoggleBoard();
-        StdOut.println(board1);
-        StdOut.println();
-
-        // initialize a 4-by-4 board using letter frequencies in English language
-        StdOut.println("Random 4-by-4 board:");
-        BoggleBoard board2 = new BoggleBoard(4, 4);
-        StdOut.println(board2);
-        StdOut.println();
-
-        // initialize a 4-by-4 board from a 2d char array
-        StdOut.println("4-by-4 board from 2D character array:");
-        char[][] a =  {
-            { 'D', 'O', 'T', 'Y' },
-            { 'T', 'R', 'S', 'F' },
-            { 'M', 'X', 'M', 'O' },
-            { 'Z', 'A', 'B', 'W' }
-        };
-        BoggleBoard board3 = new BoggleBoard(a);
-        StdOut.println(board3);
-        StdOut.println();
-
-        // initialize a 4-by-4 board from a file
-        String filename = "board-quinquevalencies.txt";
-        StdOut.println("4-by-4 board from file " + filename + ":");
-        BoggleBoard board4 = new BoggleBoard(filename);
-        StdOut.println(board4);
-        StdOut.println();
-    }
-    
 }
