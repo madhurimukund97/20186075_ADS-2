@@ -377,14 +377,14 @@ Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:24: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:47: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:111: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:22: Variable 'tstobj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:136:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:136:19: Parameter st should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:24: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:111: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:18: Variable 'tstobj' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:130:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:130:17: Variable 'tstobj1' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:137:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:137:15: Parameter st should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 10 errors.
 Starting audit...
