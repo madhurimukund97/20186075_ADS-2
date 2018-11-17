@@ -1,10 +1,20 @@
 import java.util.Scanner;
-
-
-public class Solution {
-
-	// Don't modify this method.
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		// constructor not used.
+	}
+	/**
+	 * Client program.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -17,7 +27,6 @@ public class Solution {
 				System.out.println(hash.get(key));
 			}
 			break;
-
 		case "getAllPrefixes":
 			// input001.txt and output001.txt
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -84,13 +93,27 @@ public class Solution {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
+		String[] lines = toReadFile(file);
+		for (String word : lines) {
+			// word = word.toLowerCase();
+			if (!st.contains(word)) {
+				st.put(word, 1);
+			} else {
+				st.put(word, st.get(word) + 1);
+			}
+		}
 		return st;
 	}
-
 }
 
 class T9 {
