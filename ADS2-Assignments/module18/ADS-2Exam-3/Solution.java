@@ -108,7 +108,8 @@ public final class Solution {
      */
     public static BinarySearchST<String, Integer> loadDictionary(
         final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+        BinarySearchST<String, Integer>  st =
+        new BinarySearchST<String, Integer>();
         // your code goes here
         String[] lines = toReadFile(file);
         for (String word : lines) {
@@ -126,8 +127,10 @@ public final class Solution {
  * Class for t9.
  */
 class T9 {
+    /**
+     * TST object.
+     */
     private TST<Integer> tstobj;
-    
     /**
      * Constructs the object.
      *
@@ -141,7 +144,7 @@ class T9 {
         }
     }
     /**
-     * get all the prefixes that match with given prefix..
+     * get all the prefixes that match with given prefix.
      *
      * @param      prefix  The prefix
      *
