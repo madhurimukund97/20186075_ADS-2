@@ -21,7 +21,8 @@ public final class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash =
+            loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -136,7 +137,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tstobj = new TST();
         for (String word : st.keys()) {
