@@ -6,7 +6,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    protected Solution() {
         // constructor not used.
     }
     /**
