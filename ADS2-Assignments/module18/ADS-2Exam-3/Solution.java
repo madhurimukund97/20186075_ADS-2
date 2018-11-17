@@ -105,7 +105,7 @@ public final class Solution {
 		// your code goes here
 		String[] lines = toReadFile(file);
 		for (String word : lines) {
-			// word = word.toLowerCase();
+			word = word.toLowerCase();
 			if (!st.contains(word)) {
 				st.put(word, 1);
 			} else {
