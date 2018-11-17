@@ -126,15 +126,14 @@ public final class Solution {
  * Class for t9.
  */
 class T9 {
-    TST<Integer> tstobj;
-    TST<String> tstobj1;
-    // String[] word;
+    private TST<Integer> tstobj;
+    
     /**
      * Constructs the object.
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tstobj = new TST();
         for (String word : st.keys()) {
@@ -183,7 +182,6 @@ class T9 {
                 // }
             }
         }
-        // String[] arr = keysWithPrefix(prefix);
         return null;
     }
 

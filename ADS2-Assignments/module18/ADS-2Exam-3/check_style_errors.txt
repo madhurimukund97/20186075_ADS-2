@@ -380,13 +380,10 @@ Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:24: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:111: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:129:18: Variable 'tstobj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:130:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:130:17: Variable 'tstobj1' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:137:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:137:15: Parameter st should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:130: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\Solution.java:136:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186075_ADS-2\ADS2-Assignments\module18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
